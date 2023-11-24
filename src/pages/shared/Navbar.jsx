@@ -5,38 +5,38 @@ const Navbar = () => {
     <>
       <NavLink
         className={(isActive) =>
-          isActive ? "text-[#8CC5D0] font-semibold" : ""
+          isActive ? "text-[#8CC5D0] font-semibold text-2xl" : "text-2xl"
         }
         to="/"
       >
         Home
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4`}
+        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
         to="/"
       >
         Gallery
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4`}
+        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
         to="/"
       >
         Trainer
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4`}
+        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
         to="/"
       >
         Classes
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4`}
+        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
         to="/"
       >
         Dashboard
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4`}
+        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
         to="/"
       >
         Community

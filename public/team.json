@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nini Jesmin",
+    "experience": 7,
+    "image": "https://i.ibb.co/zS1hW00/instructor2.jpg",
+    "description": "Passionate fitness trainer with 7 years of experience, specializing in personalized workout plans for achieving fitness goals."
+  },
+  {
+    "name": "Alia Buht",
+    "experience": 10,
+    "image": "https://i.ibb.co/fFTwDz9/instructor4.jpg",
+    "description": "Experienced nutritionist with a decade of expertise in crafting balanced and sustainable dietary plans for optimal health."
+  },
+  {
+    "name": "Charlie Davis",
+    "experience": 5,
+    "image": "https://i.ibb.co/Rz9fBdh/instructor3.jpg",
+    "description": "Yoga instructor dedicated to helping individuals find balance and tranquility through a mindful and holistic approach to yoga practice."
+  }
+]
