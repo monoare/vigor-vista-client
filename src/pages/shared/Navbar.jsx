@@ -13,7 +13,7 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
-        to="/"
+        to="/gallery"
       >
         Gallery
       </NavLink>
