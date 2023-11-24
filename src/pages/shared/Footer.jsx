@@ -3,7 +3,7 @@ import logo from "../../assets/image/logo-removebg.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer px-10 pt-10 bg-base-200 text-base-content">
+      <footer className="footer px-10 pt-10 bg-base-300 text-base-content">
         <aside>
           <img src={logo} alt="" />
           <p className="text-[#8CC5D0] text-xl font-semibold">Vigor Vista</p>
@@ -29,7 +29,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer>
-      <p className="footer footer-center bg-base-200 text-base-content py-4">
+      <p className="footer footer-center bg-base-300 text-base-content py-4">
         Copyright © 2023 - All right reserved by Vigor Vista
       </p>
     </div>
