@@ -46,20 +46,24 @@ const FeaturedClasses = () => {
   ];
 
   return (
-    <section className="bg-neutral-light py-16">
+    <section className="bg-neutral-light pb-20 pt-5">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Featured Classes</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {classes.map((cls, index) => (
-            <div key={index} className="bg-white p-6 rounded-md shadow-md">
-              <img
-                src={cls.image}
-                alt={cls.name}
-                className="w-full h-40 object-cover mb-4 rounded-md"
-              />
-              <h3 className="text-xl font-bold mb-2">{cls.name}</h3>
-              <p className="text-gray-700">{cls.description}</p>
+            <div key={index} className="card  bg-base-100 shadow-xl">
+              <figure className="px-10 pt-10">
+                <img
+                  src={cls.image}
+                  alt={cls.name}
+                  className="rounded-xl h-60"
+                />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title">{cls.name}</h2>
+                <p className="text-gray-700">{cls.description}</p>
+              </div>
             </div>
           ))}
         </div>

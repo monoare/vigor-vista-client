@@ -2,7 +2,7 @@ import gymImage from "../../../assets/image/about.jpg"; // Replace with your act
 
 const AboutSection = () => {
   return (
-    <section className="bg-neutral-light pb-20">
+    <section className="bg-neutral-light pb-20 pt-5">
       <div className="container mx-auto flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-8">About Us</h2>
 
