@@ -49,7 +49,10 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
   },
-  { path: "/trainerDetails", element: <TrainerDetails /> },
+  {
+    path: "/trainerDetails/:trainerId",
+    element: <TrainerDetails />,
+  },
 ]);
 
 export default router;
