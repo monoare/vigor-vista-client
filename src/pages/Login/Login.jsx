@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 import SocialLogin from "../../Components/SocialLogin/SocialLogin";
 import useAuth from "../../Hooks/useAuth";
+import loginImg from "../../assets/image/login.avif";
 
 const Login = () => {
   const { signIn } = useAuth();
@@ -37,14 +38,23 @@ const Login = () => {
         <title>Vigor Vista | Login</title>
       </Helmet>
 
-      <div className="hero min-h-screen bg-base-200">
+      <div
+        className="hero min-h-screen bg-base-200"
+        style={{
+          backgroundImage: `url(${loginImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+        }}
+      >
         <div className="hero-content flex-col md:flex-row">
           <div className="text-center md:w-1/2 lg:text-left">
-            <h1 className="text-5xl font-bold">Login now!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            <h1 className="text-5xl font-bold text-white">Login now!</h1>
+            <p className="py-6 font-medium text-white">
+              Unlock the door to your personalized experience – where security
+              meets seamless access. Your journey begins with a secure login,
+              ensuring your path is safeguarded as you explore the possibilities
+              within.
             </p>
           </div>
           <div className="card w-full md:w/2 max-w-sm shadow-2xl bg-base-100">

@@ -1,43 +1,80 @@
 import { Link, NavLink } from "react-router-dom";
 import title from "../../assets/image/Title-removebg.png";
+import useAuth from "../../Hooks/useAuth";
+
 const Navbar = () => {
+  const { user, LogOut } = useAuth();
   const navLinks = (
     <>
       <NavLink
-        className={(isActive) =>
-          isActive ? "text-[#8CC5D0] font-semibold text-2xl" : "text-2xl"
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "text-[#8CC5D0] font-semibold text-lg md:text-xl lg:text-2xl ml-4 md:ml-0"
+            : isPending
+            ? "text-white text-lg md:text-xl lg:text-2xl ml-4 md:ml-0"
+            : "text-lg md:text-xl lg:text-2xl ml-4 md:ml-0"
         }
         to="/"
       >
         Home
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "text-[#8CC5D0] font-semibold text-lg md:text-xl lg:text-2xl ml-4"
+            : isPending
+            ? "text-white text-lg md:text-xl lg:text-2xl ml-4"
+            : "text-lg md:text-xl lg:text-2xl ml-4"
+        }
         to="/gallery"
       >
         Gallery
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
-        to="/"
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "text-[#8CC5D0] font-semibold text-lg md:text-xl lg:text-2xl ml-4"
+            : isPending
+            ? "text-white text-lg md:text-xl lg:text-2xl ml-4"
+            : "text-lg md:text-xl lg:text-2xl ml-4"
+        }
+        to="/trainer"
       >
         Trainer
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
-        to="/"
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "text-[#8CC5D0] font-semibold text-lg md:text-xl lg:text-2xl ml-4"
+            : isPending
+            ? "text-white text-lg md:text-xl lg:text-2xl ml-4"
+            : "text-lg md:text-xl lg:text-2xl ml-4"
+        }
+        to="/classes"
       >
         Classes
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
-        to="/"
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "text-[#8CC5D0] font-semibold text-lg md:text-xl lg:text-2xl ml-4"
+            : isPending
+            ? "text-white text-lg md:text-xl lg:text-2xl ml-4"
+            : "text-lg md:text-xl lg:text-2xl ml-4"
+        }
+        to="/dashboard"
       >
         Dashboard
       </NavLink>
       <NavLink
-        className={`(isActive) => (isActive ? "text-[#8CC5D0] font-semibold" : "") ml-4 text-2xl`}
-        to="/"
+        className={({ isActive, isPending }) =>
+          isActive
+            ? "text-[#8CC5D0] font-semibold text-lg md:text-xl lg:text-2xl ml-4"
+            : isPending
+            ? "text-white text-lg md:text-xl lg:text-2xl ml-4"
+            : "text-lg md:text-xl lg:text-2xl ml-4"
+        }
+        to="/community"
       >
         Community
       </NavLink>
@@ -66,7 +103,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-500 rounded-box w-52"
           >
             {navLinks}
           </ul>
@@ -79,10 +116,49 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <Link to="/login">
-          <button className="btn btn-primary">Login</button>
-        </Link>
-        <button className="btn btn-ghost">Sign Up</button>
+        {user ? (
+          <>
+            <div className="dropdown dropdown-end mr-4">
+              <label
+                tabIndex={0}
+                className="btn btn-ghost btn-circle avatar ring ring-primary"
+              >
+                <div className="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src={user.photoURL}
+                  />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-slate-400 rounded-box w-32"
+              >
+                <p className="pl-3 text-green-800 font-semibold">
+                  User: {user.displayName}
+                </p>
+                <li>
+                  <a>Profile</a>
+                </li>
+                <li>
+                  <a>Settings</a>
+                </li>
+                <li>
+                  <a onClick={LogOut}>Logout</a>
+                </li>
+              </ul>
+            </div>
+          </>
+        ) : (
+          <>
+            <Link to="/login">
+              <button className="btn btn-primary">Login</button>
+            </Link>
+            <Link to="/signUp">
+              <button className="btn btn-ghost">Sign Up</button>
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

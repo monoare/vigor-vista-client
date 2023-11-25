@@ -4,6 +4,10 @@ import Home from "../pages/Home/Home/Home";
 import FullBlog from "../pages/Home/LatestArticles/fullBlog";
 import Login from "../pages/Login/Login";
 import Gallery from "../pages/Gallery/Gallery";
+import Trainer from "../pages/Trainer/Trainer";
+import BeATrainer from "../pages/Trainer/BeATrainer";
+import PrivateRoute from "./PrivateRoute";
+import SignUp from "../pages/SignUp/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -23,10 +27,26 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/gallery",
-        element: <Gallery />,
+        path: "/signUp",
+        element: <SignUp />,
       },
     ],
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
+  },
+  {
+    path: "/trainer",
+    element: <Trainer />,
+  },
+  {
+    path: "/beATrainer",
+    element: (
+      <PrivateRoute>
+        <BeATrainer />
+      </PrivateRoute>
+    ),
   },
 ]);
 
