@@ -8,6 +8,7 @@ import Trainer from "../pages/Trainer/Trainer";
 import BeATrainer from "../pages/Trainer/BeATrainer";
 import PrivateRoute from "./PrivateRoute";
 import SignUp from "../pages/SignUp/SignUp";
+import TrainerDetails from "../pages/Trainer/TrainerDetails";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,7 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
   },
+  { path: "/trainerDetails", element: <TrainerDetails /> },
 ]);
 
 export default router;
