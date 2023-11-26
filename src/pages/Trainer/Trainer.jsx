@@ -24,6 +24,14 @@ const Trainer = () => {
     return hour < 10 ? `0${hour}:00` : `${hour}:00`;
   };
 
+  if (!profiles) {
+    return (
+      <div className="flex justify-center items-center">
+        <span className="loading loading-ring loading-[100px]"></span>
+      </div>
+    );
+  }
+
   return (
     <div>
       <Helmet>

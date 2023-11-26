@@ -53,8 +53,8 @@ const UserBooking = () => {
             >
               <div className="h-44">
                 <h3 className="text-xl font-bold mb-2 bg-">{plan.name}</h3>
-                <hr />
-                <p className="mb-4">
+                <p className="border border-black"></p>
+                <p className="my-4">
                   <strong>Classes:</strong> {plan.classes}
                 </p>
                 <p className="mb-4">
@@ -65,7 +65,7 @@ const UserBooking = () => {
                 </p>
               </div>
               <Link to={`/joinNow/${plan.id}`}>
-                <button className="text-white px-6 py-2 btn btn-info">
+                <button className="text-white px-6 py-2 mt-2 btn btn-info">
                   Join Now
                 </button>
               </Link>

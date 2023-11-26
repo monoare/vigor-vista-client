@@ -4,6 +4,7 @@ import Navbar from "../shared/Navbar";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../Hooks/useAxiosSecure";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const Classes = () => {
   const axiosSecure = useAxiosSecure();
@@ -114,9 +115,11 @@ const Classes = () => {
                 className="card bg-base-100 shadow-xl relative flex flex-col"
               >
                 <div className="bg-green-300 w-full rounded-t-lg">
-                  <h2 className="card-title flex justify-center py-4">
-                    {cls.name}
-                  </h2>
+                  <Link to={`/classDetails/${cls._id}`}>
+                    <h2 className="card-title flex justify-center py-4 cursor-pointer">
+                      {cls.name}
+                    </h2>
+                  </Link>
                 </div>
                 <div className="p-6 flex-grow">
                   <p className="py-1 text-justify">{cls.description}</p>
@@ -131,9 +134,11 @@ const Classes = () => {
                   {/* Add more details as needed */}
                 </div>
                 <div className="card-actions">
-                  <button className="btn btn-primary w-full mt-auto">
-                    Join Now
-                  </button>
+                  <Link className="w-full" to="/trainer">
+                    <button className="btn btn-primary w-full mt-auto">
+                      Join Now
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}

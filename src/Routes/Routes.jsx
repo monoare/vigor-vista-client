@@ -11,6 +11,8 @@ import SignUp from "../pages/SignUp/SignUp";
 import TrainerDetails from "../pages/Trainer/TrainerDetails";
 import UserBooking from "../pages/Trainer/UserBooking";
 import Classes from "../pages/Classes/Classes";
+import ClassDetails from "../pages/Classes/ClassDetails";
+import Forum from "../pages/Community/Community";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +64,14 @@ const router = createBrowserRouter([
   {
     path: "/classes",
     element: <Classes />,
+  },
+  {
+    path: "/classDetails/:classId",
+    element: <ClassDetails />,
+  },
+  {
+    path: "/forum",
+    element: <Forum />,
   },
 ]);
 
