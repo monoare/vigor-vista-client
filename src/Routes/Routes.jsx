@@ -9,6 +9,8 @@ import BeATrainer from "../pages/Trainer/BeATrainer";
 import PrivateRoute from "./PrivateRoute";
 import SignUp from "../pages/SignUp/SignUp";
 import TrainerDetails from "../pages/Trainer/TrainerDetails";
+import UserBooking from "../pages/Trainer/UserBooking";
+import Classes from "../pages/Classes/Classes";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
   {
     path: "/trainerDetails/:trainerId",
     element: <TrainerDetails />,
+  },
+  {
+    path: "/userBooking/:id",
+    element: <UserBooking />,
+  },
+  {
+    path: "/classes",
+    element: <Classes />,
   },
 ]);
 
