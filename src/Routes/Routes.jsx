@@ -13,6 +13,8 @@ import UserBooking from "../pages/Trainer/UserBooking";
 import Classes from "../pages/Classes/Classes";
 import ClassDetails from "../pages/Classes/ClassDetails";
 import Forum from "../pages/Community/Forum";
+import Dashboard from "../layout/Dashboard";
+import AllSubscriber from "../pages/Dashboard/AllSubscriber/AllSubscriber";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +74,20 @@ const router = createBrowserRouter([
   {
     path: "/forum",
     element: <Forum />,
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "allSubscriber",
+        element: <AllSubscriber />,
+      },
+    ],
   },
 ]);
 

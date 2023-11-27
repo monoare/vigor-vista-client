@@ -30,7 +30,7 @@ const BeATrainer = () => {
   ];
 
   const onSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
 
     // image upload to the imgbb website and then get the url
     const imageFile = { image: data.image[0] };
@@ -43,13 +43,13 @@ const BeATrainer = () => {
       const selectedSkills = Object.keys(data.skills).filter(
         (skill) => data.skills[skill]
       );
-      console.log("Selected Skills:", selectedSkills);
+      // console.log("Selected Skills:", selectedSkills);
 
       // Now 'selectedWeekdays' is an array containing the names of selected weekdays.
       const selectedWeekdays = Object.keys(data.weekdays).filter(
         (day) => data.weekdays[day]
       );
-      console.log("Selected Weekdays:", selectedWeekdays);
+      // console.log("Selected Weekdays:", selectedWeekdays);
 
       // send the profile data to the server
       const trainerProfile = {
@@ -63,7 +63,7 @@ const BeATrainer = () => {
         description: data.description,
         image: res.data.data.display_url,
       };
-      console.log(trainerProfile);
+      // console.log(trainerProfile);
 
       const trainerRes = await axiosSecure.post("/trainers", trainerProfile);
       console.log(trainerRes.data);
@@ -79,7 +79,7 @@ const BeATrainer = () => {
         });
       }
     }
-    console.log("with image url", res.data);
+    // console.log("with image url", res.data);
   };
 
   return (

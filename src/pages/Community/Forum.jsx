@@ -8,9 +8,12 @@ import useAuth from "../../Hooks/useAuth";
 import useAxiosSecure from "../../Hooks/useAxiosSecure";
 import { AiTwotoneDislike, AiTwotoneLike } from "react-icons/ai";
 import Swal from "sweetalert2";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 const Forum = () => {
   const { user } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
   const axiosPublic = useAxiosPublic();
   const axiosSecure = useAxiosSecure();
   const [currentPage, setCurrentPage] = useState(0);
@@ -27,7 +30,10 @@ const Forum = () => {
 
   //updating up voting info
   const handleUpVoting = async (postId) => {
-    console.log("clicked");
+    if (!user) {
+      navigate("/login", { state: { from: location } }); // Redirect to the login page
+      return;
+    }
     try {
       // Send a request to update upVotes to the backend
       await axiosSecure.patch(`/forums/${postId}/upVote`, {
@@ -53,7 +59,10 @@ const Forum = () => {
 
   //updating down voting info
   const handleDownVoting = async (postId) => {
-    console.log("clicked");
+    if (!user) {
+      navigate("/login", { state: { from: location } }); // Redirect to the login page
+      return;
+    }
     try {
       // Send a request to update upVotes to the backend
       await axiosSecure.patch(`/forums/${postId}/downVote`, {
@@ -185,30 +194,20 @@ const Forum = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex gap-4">
-                    {user ? (
-                      <>
-                        <div className="flex items-center text-xl">
-                          <p className="mr-2">Up Votes: {post?.upVote} </p>
-                          <AiTwotoneLike
-                            className="cursor-pointer"
-                            onClick={() => handleUpVoting(post._id)}
-                          />
-                        </div>
-                        <div className="flex items-center text-xl">
-                          <p className="mr-2">Down Votes: {post?.downVote}</p>
-                          <AiTwotoneDislike
-                            className="cursor-pointer"
-                            onClick={() => handleDownVoting(post._id)}
-                          />
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <p>Up Votes: {post?.upVote}</p>
-                        <p>Down Votes: {post?.downVote}</p>
-                      </>
-                    )}
+
+                  <div className="flex items-center text-xl">
+                    <p className="mr-2">Up Votes: {post?.upVote} </p>
+                    <AiTwotoneLike
+                      className="cursor-pointer"
+                      onClick={() => handleUpVoting(post._id)}
+                    />
+                  </div>
+                  <div className="flex items-center text-xl">
+                    <p className="mr-2">Down Votes: {post?.downVote}</p>
+                    <AiTwotoneDislike
+                      className="cursor-pointer"
+                      onClick={() => handleDownVoting(post._id)}
+                    />
                   </div>
                 </div>
               </div>
