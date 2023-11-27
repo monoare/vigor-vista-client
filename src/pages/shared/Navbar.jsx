@@ -74,9 +74,9 @@ const Navbar = () => {
             ? "text-white text-lg md:text-xl lg:text-2xl ml-4"
             : "text-lg md:text-xl lg:text-2xl ml-4"
         }
-        to="/community"
+        to="/forum"
       >
-        Community
+        Forum
       </NavLink>
     </>
   );

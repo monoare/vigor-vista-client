@@ -1,327 +1,425 @@
 [
   {
     "id": 1,
-    "name": "Yoga",
-    "description": "Relaxing yoga class for all levels. Improve flexibility and find inner peace.",
-    "trainer": "John Doe",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Monday", "time": "8:00 AM" },
-      { "day": "Wednesday", "time": "8:00 AM" },
-      { "day": "Friday", "time": "8:00 AM" }
+    "author": "Scarlett Lewis",
+    "authorImg": "https://images.unsplash.com/photo-1623514212015-6baef062afd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-12-13T16:00:00Z",
+    "category": "Nutrition Tips",
+    "title": "Unlocking the Power of Nutrition for Fitness",
+    "shortDescription": "Exploring effective nutrition tips to enhance fitness performance and overall well-being.",
+    "description": [
+      "Nutrition plays a vital role in supporting fitness goals, providing the essential fuel and nutrients needed for optimal performance. In this forum post, we'll unlock the power of nutrition for fitness, discussing meal planning, nutrient timing, and the role of hydration in achieving fitness success.",
+      "Join the conversation to share your nutrition tips, ask questions, and connect with fellow fitness enthusiasts on the journey to discovering the impact of proper nutrition on physical performance. Let's delve into the world of nourishment and create a community that celebrates the synergy of nutrition and fitness."
     ],
-    "location": "Yoga Studio A"
+    "image": "https://images.unsplash.com/photo-1497888329096-51c27beff665?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "upVote": 42,
+    "downVote": 4
   },
   {
     "id": 2,
-    "name": "Cardio",
-    "description": "High-intensity cardio workout to boost your heart rate and burn calories.",
-    "trainer": "Jane Smith",
-    "duration": "45 minutes",
-    "schedule": [
-      { "day": "Tuesday", "time": "10:00 AM" },
-      { "day": "Thursday", "time": "10:00 AM" }
+    "author": "Zoe Griffin",
+    "authorImg": "https://images.unsplash.com/photo-1618924250456-0c7d405f2d53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2023-12-16T10:45:00Z",
+    "category": "Mindful Exercise",
+    "title": "Mindful Movement: Integrating Awareness into Exercise",
+    "shortDescription": "Exploring the benefits of incorporating mindfulness into your exercise routine.",
+    "description": [
+      "Mindful exercise involves the integration of awareness and intention into your movement, fostering a deeper connection between the mind and body. In this forum post, we'll explore the benefits of mindful movement, discussing mindful walking, meditation, and yoga practices that enhance the exercise experience.",
+      "Join the conversation to share your experiences with mindful exercise, ask questions, and connect with others interested in the holistic approach to fitness. Let's embark on a journey of mindful movement together, cultivating a community that values the harmonious connection between mind and body in every workout."
     ],
-    "location": "Cardio Room"
+    "image": "https://images.unsplash.com/photo-1603539007295-1f5ae46150ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fE1pbmRmdWwlMjBFeGVyY2lzZXxlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 39,
+    "downVote": 5
   },
   {
     "id": 3,
-    "name": "Strength Training",
-    "description": "Build strength with weight training. Suitable for all fitness levels.",
-    "trainer": "Mike Johnson",
-    "duration": "1.5 hours",
-    "schedule": [
-      { "day": "Monday", "time": "5:00 PM" },
-      { "day": "Wednesday", "time": "5:00 PM" },
-      { "day": "Friday", "time": "5:00 PM" }
+    "author": "Gabriel White",
+    "authorImg": "https://images.unsplash.com/photo-1623430844216-0ab516cb8bd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2023-12-19T14:30:00Z",
+    "category": "Running Challenges",
+    "title": "Conquering Running Challenges: Strategies for Success",
+    "shortDescription": "Discussing effective strategies for conquering running challenges and achieving personal goals.",
+    "description": [
+      "Running challenges, whether it's a marathon or a personal distance goal, require strategic planning and perseverance. In this forum post, we'll discuss effective strategies for conquering running challenges, covering training plans, mental resilience, and tips for optimizing performance on race day.",
+      "Join the conversation to share your running experiences, ask questions, and connect with fellow runners on the path to conquering challenges. Let's create a supportive community that celebrates the joy of running and inspires each other to achieve new heights in our running journeys."
     ],
-    "location": "Strength Training Area"
+    "image": "https://images.unsplash.com/photo-1486218119243-13883505764c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fFJ1bm5pbmclMjBDaGFsbGVuZ2VzfGVufDB8fDB8fHww",
+    "upVote": 48,
+    "downVote": 5
   },
   {
     "id": 4,
-    "name": "Pilates",
-    "description": "Core-strengthening Pilates exercises for a strong and toned body.",
-    "trainer": "Emily Davis",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Tuesday", "time": "9:30 AM" },
-      { "day": "Thursday", "time": "3:00 PM" }
+    "author": "Xavier Reed",
+    "authorImg": "https://images.unsplash.com/photo-1616015060919-117fbafa0aae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM3fHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2023-12-22T12:15:00Z",
+    "category": "Strength Training",
+    "title": "Elevating Strength Training: Advanced Techniques and Insights",
+    "shortDescription": "Exploring advanced techniques and insights to elevate your strength training routine.",
+    "description": [
+      "Strength training is a dynamic and evolving discipline, and advanced techniques can take your routine to new heights. In this forum post, we'll explore advanced techniques and insights for elevating your strength training, including progressive overload, periodization, and specialized exercises for targeted muscle groups.",
+      "Join the conversation to share your strength training journey, ask questions, and connect with others passionate about advancing their strength training routines. Let's delve into the world of strength and conditioning together, fostering a community dedicated to achieving strength and resilience."
     ],
-    "location": "Pilates Studio B"
+    "image": "https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFN0cmVuZ3RoJTIwVHJhaW5pbmd8ZW58MHx8MHx8fDA%3D",
+    "upVote": 37,
+    "downVote": 7
   },
   {
     "id": 5,
-    "name": "Zumba",
-    "description": "Dance-based fitness party. Have fun while burning calories with energetic music.",
-    "trainer": "Alex Turner",
-    "duration": "1 hour",
-    "schedule": [{ "day": "Tuesday", "time": "3:00 PM" }],
-    "location": "Dance Studio"
+    "author": "Natalie Powell",
+    "authorImg": "https://images.unsplash.com/photo-1623167110672-e3a5e1c06174?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY0fHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2023-12-25T11:00:00Z",
+    "category": "Cycling Adventures",
+    "title": "Embarking on Cycling Adventures: Tips for Cyclists of All Levels",
+    "shortDescription": "Discussing tips and advice for cyclists exploring new adventures and challenges.",
+    "description": [
+      "Cycling adventures provide a thrilling way to explore new landscapes and challenge your cycling abilities. In this forum post, we'll discuss tips for cyclists of all levels, covering equipment essentials, route planning, and strategies for overcoming common challenges on the road.",
+      "Join the conversation to share your cycling adventures, ask questions, and connect with fellow cyclists passionate about exploring the world on two wheels. Let's create a community that celebrates the joy of cycling and encourages each other to embark on new and exciting biking adventures."
+    ],
+    "image": "https://images.unsplash.com/photo-1531140713905-b3abd17361c1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "upVote": 43,
+    "downVote": 6
   },
+
   {
     "id": 6,
-    "name": "Running Club",
-    "description": "Group running sessions for all runners. Improve endurance and meet fellow runners.",
-    "trainer": "Sara White",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Wednesday", "time": "7:00 AM" },
-      { "day": "Saturday", "time": "9:00 AM" }
+    "author": "Oliver Hayes",
+    "authorImg": "https://images.unsplash.com/photo-1610419923009-f0a50c304f10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2023-12-28T13:45:00Z",
+    "category": "HIIT Workouts",
+    "title": "Maximizing Results with HIIT Workouts: A Comprehensive Guide",
+    "shortDescription": "Exploring the principles and benefits of High-Intensity Interval Training (HIIT).",
+    "description": [
+      "HIIT workouts offer a time-efficient and effective approach to fitness, combining short bursts of intense exercise with periods of rest. In this forum post, we'll explore the principles and benefits of High-Intensity Interval Training (HIIT), covering different workout formats, benefits, and tips for maximizing results.",
+      "Join the conversation to share your HIIT experiences, ask questions, and connect with others enthusiastic about incorporating high-intensity intervals into their fitness routines. Let's delve into the world of HIIT together, creating a community that embraces the efficiency and effectiveness of this dynamic workout approach."
     ],
-    "location": "Outdoor Track"
+    "image": "https://images.unsplash.com/photo-1434596922112-19c563067271?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "upVote": 40,
+    "downVote": 4
   },
   {
     "id": 7,
-    "name": "Spin Class",
-    "description": "Indoor cycling class for a cardiovascular workout. Feel the burn!",
-    "trainer": "Chris Miller",
-    "duration": "45 minutes",
-    "schedule": [
-      { "day": "Monday", "time": "6:30 AM" },
-      { "day": "Wednesday", "time": "6:30 AM" },
-      { "day": "Friday", "time": "6:30 AM" }
+    "author": "Eva Foster",
+    "authorImg": "https://images.unsplash.com/photo-1627484816751-012f6ac0385e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTczfHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2024-01-01T09:30:00Z",
+    "category": "Martial Arts Mastery",
+    "title": "Journey to Martial Arts Mastery: Techniques and Insights",
+    "shortDescription": "Discussing the journey to mastering martial arts, from techniques to mental discipline.",
+    "description": [
+      "Martial arts is an art form that combines physical techniques with mental discipline. In this forum post, we'll discuss the journey to martial arts mastery, exploring different martial arts styles, techniques, and insights into the mental and physical aspects of training.",
+      "Join the conversation to share your martial arts journey, ask questions, and connect with fellow martial artists on the path to mastery. Let's create a community that celebrates the diverse world of martial arts and supports each other in achieving excellence in this ancient and revered discipline."
     ],
-    "location": "Cycling Studio"
+    "image": "https://images.unsplash.com/photo-1515025617920-e1e674b5033c?q=80&w=944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "upVote": 46,
+    "downVote": 5
   },
   {
     "id": 8,
-    "name": "Kickboxing",
-    "description": "High-energy kickboxing class. Punch and kick your way to fitness.",
-    "trainer": "Taylor Clark",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Thursday", "time": "6:00 PM" },
-      { "day": "Saturday", "time": "10:00 AM" }
+    "author": "Lucas Turner",
+    "authorImg": "https://images.unsplash.com/photo-1621921453423-87158be3514c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHxwb3J0YWl0fGVufDB8fDB8fHww",
+    "publishDate": "2024-01-04T14:00:00Z",
+    "category": "Outdoor Fitness",
+    "title": "Embracing Outdoor Fitness: Connecting with Nature in Your Workouts",
+    "shortDescription": "Exploring the benefits and strategies of outdoor fitness, from hiking to outdoor workouts.",
+    "description": [
+      "Outdoor fitness offers a unique opportunity to connect with nature while staying active and healthy. In this forum post, we'll explore the benefits and strategies of outdoor fitness, covering activities such as hiking, outdoor workouts, and embracing the natural environment for your fitness routine.",
+      "Join the conversation to share your outdoor fitness experiences, ask questions, and connect with others who appreciate the beauty of combining physical activity with the great outdoors. Let's embark on a journey of outdoor fitness together, creating a community that values the synergy of fitness and nature."
     ],
-    "location": "Kickboxing Room"
+    "image": "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "upVote": 41,
+    "downVote": 1
   },
   {
     "id": 9,
-    "name": "Swimming",
-    "description": "Swim laps and improve your aquatic fitness with our swimming class.",
-    "trainer": "Emma Turner",
-    "duration": "1.5 hours",
-    "schedule": [
-      { "day": "Monday", "time": "4:00 PM" },
-      { "day": "Wednesday", "time": "4:00 PM" }
+    "author": "Olivia Turner",
+    "authorImg": "https://images.unsplash.com/photo-1624603225543-2ef7ffb11c8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-01T09:30:00Z",
+    "category": "Fitness",
+    "title": "Effective High-Intensity Workouts",
+    "shortDescription": "Discover efficient and impactful high-intensity workouts for achieving fitness goals.",
+    "description": [
+      "High-intensity workouts have gained popularity for their efficiency in burning calories and improving cardiovascular health. In this forum post, we'll explore effective high-intensity workout routines, discuss their benefits, and share tips for maximizing results.",
+      "From HIIT (High-Intensity Interval Training) to circuit workouts, join the conversation to learn about different approaches to high-intensity exercise. Whether you're a fitness enthusiast or someone looking to boost their workout routine, this forum provides insights and support for achieving your fitness goals.",
+      "Let's sweat it out together and inspire each other on the journey to a healthier and fitter lifestyle."
     ],
-    "location": "Swimming Pool"
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Rml0bmVzc3xlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 42,
+    "downVote": 2
   },
   {
     "id": 10,
-    "name": "Piloxing",
-    "description": "Fusion of Pilates, boxing, and dance. A full-body workout with a mix of fun.",
-    "trainer": "Daniel Brown",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Tuesday", "time": "5:30 PM" },
-      { "day": "Thursday", "time": "5:30 PM" }
+    "author": "Megan Johnson",
+    "authorImg": "https://images.unsplash.com/photo-1624835589323-442670703bc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-04T15:15:00Z",
+    "category": "Nutrition",
+    "title": "Balanced Nutrition for Fitness Enthusiasts",
+    "shortDescription": "Exploring the importance of balanced nutrition for optimizing fitness performance.",
+    "description": [
+      "Nutrition plays a crucial role in achieving and maintaining fitness goals. In this forum post, we'll delve into the principles of balanced nutrition for fitness enthusiasts, discussing the role of macronutrients, hydration, and supplementation.",
+      "We'll explore practical tips for meal planning, pre and post-workout nutrition, and the significance of fueling your body with the right nutrients. Join the conversation to share your nutritional insights, ask questions, and connect with fellow fitness enthusiasts on the path to optimal health.",
+      "Embark on a journey to discover the symbiotic relationship between nutrition and fitness, and let's nourish our bodies for success."
     ],
-    "location": "Piloxing Studio"
+    "image": "https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QmFsYW5jZWQlMjBOdXRyaXRpb258ZW58MHx8MHx8fDA%3D",
+    "upVote": 37,
+    "downVote": 3
+  },
+  {
+    "id": 9,
+    "author": "Daniel Lee",
+    "authorImg": "https://images.unsplash.com/photo-1623800417590-f522665790a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-07T11:45:00Z",
+    "category": "Bodybuilding",
+    "title": "Advanced Techniques for Muscle Building",
+    "shortDescription": "Discussing advanced strategies and techniques for effective muscle building.",
+    "description": [
+      "For those passionate about sculpting their physique through muscle building, this forum post explores advanced techniques to elevate your training regimen. We'll delve into topics such as progressive overload, periodization, and targeted muscle group training.",
+      "Whether you're a seasoned bodybuilder or someone looking to take their muscle-building journey to the next level, join the conversation to share your experiences, ask questions, and gain insights from fellow fitness enthusiasts.",
+      "Let's push our limits and explore the science and art of building strong, resilient muscles for a powerful and well-defined physique."
+    ],
+    "image": "https://example.com/advanced_muscle_building.jpg",
+    "upVote": 51,
+    "downVote": 4
+  },
+  {
+    "id": 10,
+    "author": "Emma Harris",
+    "authorImg": "https://images.unsplash.com/photo-1631441377077-c87ad1cf8005?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-10T14:00:00Z",
+    "category": "Cardio",
+    "title": "Revolutionizing Cardio Workouts",
+    "shortDescription": "Revolutionary approaches to cardio exercise for enhanced cardiovascular health.",
+    "description": [
+      "Cardiovascular health is a cornerstone of overall fitness, and this forum post introduces innovative approaches to cardio workouts. We'll explore alternative cardio exercises, discuss the benefits of varied intensity, and share tips for making cardio engaging and effective.",
+      "Whether you prefer traditional running or are interested in exploring unconventional cardio activities, join the conversation to share your cardio experiences, ask questions, and inspire others on their fitness journey.",
+      "Let's reimagine cardio as a dynamic and enjoyable component of our fitness routines, promoting heart health and endurance."
+    ],
+    "image": "https://images.unsplash.com/photo-1517130038641-a774d04afb3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fENhcmRpb3xlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 48,
+    "downVote": 2
   },
   {
     "id": 11,
-    "name": "CrossFit",
-    "description": "High-intensity functional fitness. Challenge yourself with varied workouts.",
-    "trainer": "Olivia Martin",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Monday", "time": "6:00 AM" },
-      { "day": "Wednesday", "time": "6:00 AM" },
-      { "day": "Friday", "time": "6:00 AM" }
+    "author": "Alex Rodriguez",
+    "authorImg": "https://images.unsplash.com/photo-1627729085140-e0912b70e79e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-13T10:30:00Z",
+    "category": "Mind-Body Connection",
+    "title": "Harmony of Mind and Body in Fitness",
+    "shortDescription": "Exploring the interconnectedness of mental well-being and physical fitness.",
+    "description": [
+      "Achieving holistic health involves recognizing the profound connection between our mental and physical well-being. In this forum post, we'll delve into the harmony of mind and body in the context of fitness, discussing the impact of mental health on physical performance.",
+      "From mindfulness practices to the psychological benefits of exercise, join the conversation to explore how fostering a positive mind-body connection can enhance overall fitness. Share your experiences, ask questions, and contribute to creating a supportive community that values the integration of mental and physical health.",
+      "Let's embark on a journey to cultivate a harmonious relationship between our minds and bodies for sustained well-being."
     ],
-    "location": "CrossFit Box"
+    "image": "https://images.unsplash.com/photo-1461532257246-777de18cd58b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fE1pbmQlMjBCb2R5JTIwQ29ubmVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 56,
+    "downVote": 1
   },
   {
     "id": 12,
-    "name": "Barre",
-    "description": "Ballet-inspired workout. Strengthen and tone your muscles with barre exercises.",
-    "trainer": "Liam Wilson",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Wednesday", "time": "9:00 AM" },
-      { "day": "Saturday", "time": "11:00 AM" }
+    "author": "Sophia Martin",
+    "authorImg": "https://images.unsplash.com/photo-1623396166488-47ef840d69bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-16T12:45:00Z",
+    "category": "Yoga and Meditation",
+    "title": "Balancing Life with Yoga and Meditation",
+    "shortDescription": "Exploring the transformative power of yoga and meditation for life balance.",
+    "description": [
+      "Yoga and meditation offer profound tools for achieving balance and well-being in our hectic lives. In this forum post, we'll delve into the transformative power of yoga and meditation practices, discussing their physical, mental, and emotional benefits.",
+      "From mindfulness meditation to various styles of yoga, join the conversation to share your favorite practices, ask questions, and connect with like-minded individuals on the journey to life balance. Whether you're a seasoned yogi or a beginner exploring meditation, this forum welcomes all seekers of tranquility and inner harmony.",
+      "Let's cultivate a space for open dialogue and mutual support as we navigate the path to a balanced and fulfilling life."
     ],
-    "location": "Barre Studio"
+    "image": "https://images.unsplash.com/photo-1529693662653-9d480530a697?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8WW9nYSUyMGFuZCUyME1lZGl0YXRpb258ZW58MHx8MHx8fDA%3D",
+    "upVote": 40,
+    "downVote": 9
   },
   {
     "id": 13,
-    "name": "HIIT",
-    "description": "High-Intensity Interval Training. Burn fat and boost your metabolism.",
-    "trainer": "Sophia Turner",
-    "duration": "45 minutes",
-    "schedule": [
-      { "day": "Tuesday", "time": "6:00 AM" },
-      { "day": "Thursday", "time": "6:00 AM" }
+    "author": "Liam Wilson",
+    "authorImg": "https://images.unsplash.com/photo-1608662867938-f50663c033f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-19T14:15:00Z",
+    "category": "Weightlifting",
+    "title": "Mastering the Art of Weightlifting",
+    "shortDescription": "Discussing techniques and strategies for mastering the art of weightlifting.",
+    "description": [
+      "Weightlifting is both a science and an art, requiring precision and dedication. In this forum post, we'll explore the nuances of mastering the art of weightlifting, delving into proper form, progressive overload, and personalized training programs.",
+      "Whether you're a beginner eager to learn or an experienced lifter looking to refine your techniques, join the conversation to share your insights, ask questions, and connect with fellow weightlifting enthusiasts. Let's unravel the secrets of effective weightlifting and inspire each other on the path to strength and resilience."
     ],
-    "location": "HIIT Zone"
+    "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8V2VpZ2h0bGlmdGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 45,
+    "downVote": 7
   },
   {
     "id": 14,
-    "name": "Aerial Yoga",
-    "description": "Yoga with a twist! Practice yoga suspended in mid-air using silk hammocks.",
-    "trainer": "Ryan Adams",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Monday", "time": "7:00 PM" },
-      { "day": "Wednesday", "time": "7:00 PM" }
+    "author": "Ava Martinez",
+    "authorImg": "https://images.unsplash.com/photo-1628266857311-f759c7a73bc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-22T11:00:00Z",
+    "category": "Outdoor Fitness",
+    "title": "Embracing Nature in Your Fitness Journey",
+    "shortDescription": "Exploring the benefits of outdoor fitness activities and connecting with nature.",
+    "description": [
+      "Nature provides a serene backdrop for fitness activities, enhancing both physical and mental well-being. In this forum post, we'll discuss the benefits of embracing outdoor fitness, from trail running to outdoor yoga, and share tips for incorporating nature into your fitness routine.",
+      "Join the conversation to share your favorite outdoor fitness experiences, ask questions, and inspire others to explore the beauty of nature while staying active. Let's build a community that celebrates the joy of outdoor fitness and the rejuvenating power of natural environments."
     ],
-    "location": "Aerial Yoga Studio"
+    "image": "https://images.unsplash.com/photo-1598702631024-b282c0fd96b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fE91dGRvb3IlMjBGaXRuZXNzfGVufDB8fDB8fHww",
+    "upVote": 53,
+    "downVote": 13
   },
   {
     "id": 15,
-    "name": "Boxing",
-    "description": "Learn boxing techniques and improve your strength and agility.",
-    "trainer": "Ava Martinez",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Thursday", "time": "7:30 PM" },
-      { "day": "Saturday", "time": "12:00 PM" }
+    "author": "Noah Turner",
+    "authorImg": "https://images.unsplash.com/photo-1612561980268-884dbc32af50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-25T13:30:00Z",
+    "category": "Recovery Techniques",
+    "title": "Optimizing Recovery for Peak Performance",
+    "shortDescription": "Discussing effective recovery techniques for optimizing physical performance.",
+    "description": [
+      "Recovery is a critical aspect of any fitness journey, contributing to enhanced performance and injury prevention. In this forum post, we'll explore various recovery techniques, including proper sleep, nutrition, and specialized recovery modalities.",
+      "Join the conversation to share your favorite recovery strategies, ask questions, and learn from fellow fitness enthusiasts about optimizing recovery for peak physical performance. Let's create a supportive space for discussing the importance of recovery in achieving our fitness goals and sustaining long-term well-being."
     ],
-    "location": "Boxing Ring"
+    "image": "https://images.unsplash.com/photo-1630057105795-d858189bee44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fFJlY292ZXJ5JTIwVGVjaG5pcXVlc3xlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 49,
+    "downVote": 9
   },
   {
     "id": 16,
-    "name": "Paddleboard Yoga",
-    "description": "Yoga on paddleboards in the pool. Improve balance and core strength.",
-    "trainer": "Jake Foster",
-    "duration": "1.5 hours",
-    "schedule": [{ "day": "Friday", "time": "3:30 PM" }],
-    "location": "Paddleboard Yoga Pool"
+    "author": "Harper Clark",
+    "authorImg": "https://images.unsplash.com/photo-1618088044996-29f175e9d672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-11-28T09:45:00Z",
+    "category": "Flexibility Training",
+    "title": "Unlocking Flexibility: A Comprehensive Guide",
+    "shortDescription": "Exploring techniques and practices for unlocking and enhancing flexibility.",
+    "description": [
+      "Flexibility is a key component of overall fitness, contributing to improved range of motion and reduced injury risk. In this forum post, we'll delve into a comprehensive guide on unlocking flexibility, covering dynamic stretching, yoga, and targeted flexibility exercises.",
+      "Whether you're a yoga enthusiast or looking to enhance your overall flexibility, join the conversation to share your experiences, ask questions, and connect with others on the journey to increased flexibility. Let's unravel the secrets of supple movement and flexibility for a well-rounded fitness experience."
+    ],
+    "image": "https://plus.unsplash.com/premium_photo-1661717977220-2d24b59ddae1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fEZsZXhpYmlsaXR5JTIwVHJhaW5pbmd8ZW58MHx8MHx8fDA%3D",
+    "upVote": 41,
+    "downVote": 6
   },
   {
     "id": 17,
-    "name": "Circuit Training",
-    "description": "Rotate through different exercises in a circuit. A total-body workout.",
-    "trainer": "Isabel Davis",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Tuesday", "time": "4:30 PM" },
-      { "day": "Thursday", "time": "4:30 PM" }
+    "author": "Evelyn Baker",
+    "authorImg": "https://images.unsplash.com/photo-1633419798502-a013e8787da0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-12-01T10:00:00Z",
+    "category": "Mental Resilience",
+    "title": "Building Mental Resilience Through Fitness",
+    "shortDescription": "Examining the connection between physical activity and mental resilience.",
+    "description": [
+      "Physical activity has profound effects on mental well-being, contributing to increased resilience and stress management. In this forum post, we'll explore the link between fitness and mental resilience, discussing how various forms of exercise positively impact mental health.",
+      "Join the conversation to share your personal journey of building mental resilience through fitness, ask questions, and connect with a community passionate about the holistic benefits of exercise. Let's create a supportive space for fostering mental strength and well-being through our shared fitness experiences."
     ],
-    "location": "Circuit Training Area"
+    "image": "https://images.unsplash.com/photo-1604480132736-44c188fe4d20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fE1lbnRhbCUyMFJlc2lsaWVuY2V8ZW58MHx8MHx8fDA%3D",
+    "upVote": 36,
+    "downVote": 11
   },
   {
     "id": 18,
-    "name": "Meditation",
-    "description": "Guided meditation to reduce stress and promote mindfulness.",
-    "trainer": "Eva White",
-    "duration": "30 minutes",
-    "schedule": [
-      { "day": "Wednesday", "time": "11:30 AM" },
-      { "day": "Friday", "time": "11:30 AM" }
+    "author": "Jackson Adams",
+    "authorImg": "https://images.unsplash.com/photo-1622626426572-c268eb006092?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-12-04T14:45:00Z",
+    "category": "CrossFit Challenges",
+    "title": "Embarking on CrossFit Challenges: Tips and Tricks",
+    "shortDescription": "Discussing the world of CrossFit challenges and strategies for success.",
+    "description": [
+      "CrossFit challenges offer a dynamic and intense form of fitness that engages participants in various exercises and workouts. In this forum post, we'll explore the realm of CrossFit challenges, sharing tips and tricks for success, discussing different challenge formats, and highlighting the benefits of CrossFit-style training.",
+      "Whether you're a CrossFit veteran or curious about trying your first challenge, join the conversation to share your experiences, ask questions, and connect with others passionate about the diverse and challenging world of CrossFit. Let's embark on this fitness journey together and uncover the exhilarating potential of CrossFit challenges."
     ],
-    "location": "Meditation Room"
+    "image": "https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fENyb3NzRml0JTIwQ2hhbGxlbmdlc3xlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 47,
+    "downVote": 5
   },
   {
     "id": 19,
-    "name": "TRX",
-    "description": "Total-body resistance exercise using TRX suspension straps.",
-    "trainer": "Noah Turner",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Monday", "time": "6:30 PM" },
-      { "day": "Wednesday", "time": "6:30 PM" }
+    "author": "Aiden Scott",
+    "authorImg": "https://images.unsplash.com/photo-1608549036505-ead5b1de5417?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-12-07T11:30:00Z",
+    "category": "Functional Fitness",
+    "title": "Functional Fitness for Everyday Life",
+    "shortDescription": "Exploring the principles and benefits of functional fitness for daily activities.",
+    "description": [
+      "Functional fitness focuses on exercises that enhance your ability to perform everyday activities with ease. In this forum post, we'll delve into the principles and benefits of functional fitness, discussing how it improves strength, flexibility, and balance for practical, real-world applications.",
+      "Join the conversation to share your experiences with functional fitness, ask questions, and connect with others interested in optimizing their physical abilities for daily life. Let's discover the relevance and joy of functional fitness in our daily routines, fostering a community dedicated to functional well-being."
     ],
-    "location": "TRX Zone"
+    "image": "https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fEZ1bmN0aW9uYWwlMjBGaXRuZXNzfGVufDB8fDB8fHww",
+    "upVote": 44,
+    "downVote": 3
   },
   {
     "id": 20,
-    "name": "Bootcamp",
-    "description": "Intense outdoor fitness class. Challenge yourself with varied workouts.",
-    "trainer": "Sophie Adams",
-    "duration": "1 hour",
-    "schedule": [{ "day": "Saturday", "time": "8:00 AM" }],
-    "location": "Outdoor Training Area"
+    "author": "Madison Young",
+    "authorImg": "https://images.unsplash.com/photo-1616776005756-4dca36124bf9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2023-12-10T13:15:00Z",
+    "category": "Home Workouts",
+    "title": "Maximizing Results with Home Workouts",
+    "shortDescription": "Sharing tips and strategies for effective home workouts and fitness routines.",
+    "description": [
+      "Home workouts have become increasingly popular, providing a convenient and accessible way to stay fit. In this forum post, we'll discuss tips and strategies for maximizing results with home workouts, covering a variety of exercises and routines that can be done in the comfort of your home.",
+      "Whether you're new to home workouts or a seasoned enthusiast, join the conversation to share your favorite home workout routines, ask questions, and connect with a community passionate about achieving fitness goals from the comfort of home. Let's explore the world of home fitness together and inspire each other to reach new heights."
+    ],
+    "image": "https://images.unsplash.com/photo-1592967547619-491e36f79e7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SG9tZSUyMFdvcmtvdXRzfGVufDB8fDB8fHww",
+    "upVote": 38,
+    "downVote": 7
   },
   {
     "id": 21,
-    "name": "Aqua Aerobics",
-    "description": "Low-impact aerobic exercise in the pool. Perfect for all fitness levels.",
-    "trainer": "Nathan Harris",
-    "duration": "45 minutes",
-    "schedule": [
-      { "day": "Tuesday", "time": "2:00 PM" },
-      { "day": "Thursday", "time": "2:00 PM" }
+    "author": "Isabella Martinez",
+    "authorImg": "https://images.unsplash.com/photo-1611175140153-bfd26338ff0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydGFpdHxlbnwwfHwwfHx8MA%3D%3D",
+    "publishDate": "2024-01-07T11:15:00Z",
+    "category": "Yoga Journey",
+    "title": "Yoga Journey: Finding Balance and Serenity",
+    "shortDescription": "Embarking on a yoga journey to discover balance, flexibility, and inner serenity.",
+    "description": [
+      "Yoga is more than a physical practice; it's a journey of self-discovery and holistic well-being. In this forum post, we'll explore the transformative power of yoga, discussing various yoga styles, meditation practices, and the benefits of incorporating yoga into your daily life.",
+      "Join the conversation to share your yoga journey, ask questions, and connect with fellow yogis on the path to finding balance and serenity. Let's create a community that embraces the profound impact of yoga on physical and mental health, fostering a sense of tranquility and mindfulness."
     ],
-    "location": "Aqua Aerobics Pool"
+    "image": "https://images.unsplash.com/photo-1500904156668-758cff89dcff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fFlvZ2ElMjBKb3VybmV5fGVufDB8fDB8fHww",
+    "upVote": 35,
+    "downVote": 13
   },
   {
     "id": 22,
-    "name": "Cycling",
-    "description": "Indoor cycling class with energizing music. Pedal your way to fitness.",
-    "trainer": "Lily Turner",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Wednesday", "time": "8:30 AM" },
-      { "day": "Friday", "time": "8:30 AM" }
+    "author": "Mason Ward",
+    "authorImg": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D",
+    "publishDate": "2024-01-10T13:30:00Z",
+    "category": "Functional Fitness",
+    "title": "Functional Fitness for Everyday Life: Practical Tips and Exercises",
+    "shortDescription": "Exploring the concept of functional fitness and incorporating it into daily activities.",
+    "description": [
+      "Functional fitness focuses on exercises that enhance your ability to perform daily activities more efficiently. In this forum post, we'll explore the concept of functional fitness, providing practical tips and exercises that can be seamlessly integrated into your everyday life.",
+      "Join the conversation to share your experiences with functional fitness, ask questions, and connect with others interested in optimizing their physical abilities for daily tasks. Let's dive into the world of functional fitness together, creating a community that values the practical application of fitness in our daily routines."
     ],
-    "location": "Cycling Studio"
+    "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fEZ1bmN0aW9uYWwlMjBGaXRuZXNzfGVufDB8fDB8fHww",
+    "upVote": 37,
+    "downVote": 11
   },
   {
     "id": 23,
-    "name": "Kettlebell Workout",
-    "description": "Full-body workout using kettlebells. Improve strength and endurance.",
-    "trainer": "Oscar Miller",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Monday", "time": "9:00 AM" },
-      { "day": "Thursday", "time": "9:00 AM" }
+    "author": "Sophie Turner",
+    "authorImg": "https://images.unsplash.com/photo-1618747946260-9511b46b1ac7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGFpdHxlbnwwfHwwfHx8MA%3D%3D",
+    "publishDate": "2024-01-13T15:45:00Z",
+    "category": "Wellness Mindset",
+    "title": "Cultivating a Wellness Mindset: Nurturing Your Body and Mind",
+    "shortDescription": "Discussing the importance of a wellness mindset and strategies for holistic well-being.",
+    "description": [
+      "A wellness mindset goes beyond physical health, encompassing mental and emotional well-being. In this forum post, we'll discuss the importance of cultivating a wellness mindset, exploring mindfulness practices, self-care strategies, and the impact of positive thinking on overall health.",
+      "Join the conversation to share your journey towards a wellness mindset, ask questions, and connect with others committed to nurturing their body and mind. Let's build a community that prioritizes holistic well-being, fostering a positive and supportive environment for everyone on the wellness journey."
     ],
-    "location": "Kettlebell Area"
+    "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8V2VsbG5lc3MlMjBNaW5kc2V0fGVufDB8fDB8fHww",
+    "upVote": 44,
+    "downVote": 22
   },
   {
     "id": 24,
-    "name": "Yin Yoga",
-    "description": "Gentle and slow-paced yoga. Relax and release tension in deep stretches.",
-    "trainer": "Lucy Taylor",
-    "duration": "1 hour",
-    "schedule": [
-      { "day": "Tuesday", "time": "7:30 PM" },
-      { "day": "Thursday", "time": "7:30 PM" }
+    "author": "Dylan Carter",
+    "authorImg": "https://images.unsplash.com/photo-1627087820883-7a102b79179a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGFpdHxlbnwwfHwwfHx8MA%3D%3D",
+    "publishDate": "2024-01-16T10:00:00Z",
+    "category": "CrossFit Challenges",
+    "title": "CrossFit Challenges: Pushing Limits and Achieving Results",
+    "shortDescription": "Exploring the world of CrossFit challenges, from intense workouts to community support.",
+    "description": [
+      "CrossFit challenges provide a platform for pushing physical limits and achieving remarkable results. In this forum post, we'll explore the world of CrossFit, discussing challenging workouts, community support, and the transformative impact of CrossFit on strength, endurance, and overall fitness.",
+      "Join the conversation to share your CrossFit journey, ask questions, and connect with fellow CrossFit enthusiasts. Let's create a community that celebrates the intensity and camaraderie of CrossFit challenges, inspiring each other to conquer new heights in our fitness endeavors."
     ],
-    "location": "Yin Yoga Studio"
-  },
-  {
-    "id": 25,
-    "name": "Functional Fitness",
-    "description": "Functional movements to improve daily activities and overall fitness.",
-    "trainer": "Mason Turner",
-    "duration": "1.5 hours",
-    "schedule": [
-      { "day": "Tuesday", "time": "1:00 PM" },
-      { "day": "Thursday", "time": "1:00 PM" }
-    ],
-    "location": "Functional Fitness Area"
-  },
-  {
-    "id": 26,
-    "name": "Rowing",
-    "description": "Cardiovascular and full-body workout using rowing machines.",
-    "trainer": "Grace Harris",
-    "duration": "45 minutes",
-    "schedule": [
-      { "day": "Wednesday", "time": "3:30 PM" },
-      { "day": "Friday", "time": "3:30 PM" }
-    ],
-    "location": "Rowing Zone"
-  },
-  {
-    "id": 27,
-    "name": "Aerobic Dance",
-    "description": "Fun and energetic dance workout. Improve cardiovascular health with dance moves.",
-    "trainer": "Ethan Turner",
-    "duration": "1 hour",
-    "schedule": [{ "day": "Thursday", "time": "5:30 PM" }],
-    "location": "Dance Studio"
-  },
-  {
-    "id": 28,
-    "name": "MMA Fitness",
-    "description": "Mixed Martial Arts-inspired fitness class. Improve strength and agility.",
-    "trainer": "Zoe Davis",
-    "duration": "1 hour",
-    "schedule": [{ "day": "Saturday", "time": "11:30 AM" }],
-    "location": "MMA Fitness Area"
+    "image": "https://images.unsplash.com/photo-1689876593463-6678f2e8d4f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fENyb3NzRml0JTIwQ2hhbGxlbmdlc3xlbnwwfHwwfHx8MA%3D%3D",
+    "upVote": 41,
+    "downVote": 25
   }
 ]

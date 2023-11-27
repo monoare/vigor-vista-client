@@ -12,7 +12,7 @@ import TrainerDetails from "../pages/Trainer/TrainerDetails";
 import UserBooking from "../pages/Trainer/UserBooking";
 import Classes from "../pages/Classes/Classes";
 import ClassDetails from "../pages/Classes/ClassDetails";
-import Forum from "../pages/Community/Community";
+import Forum from "../pages/Community/Forum";
 
 const router = createBrowserRouter([
   {
