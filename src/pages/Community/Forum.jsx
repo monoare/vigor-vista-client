@@ -4,13 +4,18 @@ import Navbar from "../shared/Navbar";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import { useState } from "react";
-// import ForumPost from "./ForumPost";
+import useAuth from "../../Hooks/useAuth";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import { AiTwotoneDislike, AiTwotoneLike } from "react-icons/ai";
+import Swal from "sweetalert2";
 
 const Forum = () => {
+  const { user } = useAuth();
   const axiosPublic = useAxiosPublic();
+  const axiosSecure = useAxiosSecure();
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(6);
-  const { data } = useQuery({
+  const { data, refetch } = useQuery({
     queryKey: ["forums", currentPage, itemsPerPage],
     queryFn: async () => {
       const res = await axiosPublic.get(
@@ -19,6 +24,58 @@ const Forum = () => {
       return res.data;
     },
   });
+
+  //updating up voting info
+  const handleUpVoting = async (postId) => {
+    console.log("clicked");
+    try {
+      // Send a request to update upVotes to the backend
+      await axiosSecure.patch(`/forums/${postId}/upVote`, {
+        email: user.email,
+      });
+
+      // Refetch the data to update the UI with the new upVotes count
+      refetch();
+    } catch (error) {
+      console.error("Error upVoting post:", error);
+      if (error.response && error.response.status === 400) {
+        // Display an alert when status is 400
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          title: "You have already voted this post.",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    }
+  };
+
+  //updating down voting info
+  const handleDownVoting = async (postId) => {
+    console.log("clicked");
+    try {
+      // Send a request to update upVotes to the backend
+      await axiosSecure.patch(`/forums/${postId}/downVote`, {
+        email: user.email,
+      });
+
+      // Refetch the data to update the UI with the new upVotes count
+      refetch();
+    } catch (error) {
+      console.error("Error upVoting post:", error);
+      if (error.response && error.response.status === 400) {
+        // Display an alert when status is 400
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          title: "You have already voted this post.",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    }
+  };
 
   const totalCount = data?.count;
 
@@ -129,8 +186,29 @@ const Forum = () => {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <p>Up Votes: {post?.upVote}</p>
-                    <p>Down Votes: {post?.downVote}</p>
+                    {user ? (
+                      <>
+                        <div className="flex items-center text-xl">
+                          <p className="mr-2">Up Votes: {post?.upVote} </p>
+                          <AiTwotoneLike
+                            className="cursor-pointer"
+                            onClick={() => handleUpVoting(post._id)}
+                          />
+                        </div>
+                        <div className="flex items-center text-xl">
+                          <p className="mr-2">Down Votes: {post?.downVote}</p>
+                          <AiTwotoneDislike
+                            className="cursor-pointer"
+                            onClick={() => handleDownVoting(post._id)}
+                          />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <p>Up Votes: {post?.upVote}</p>
+                        <p>Down Votes: {post?.downVote}</p>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>

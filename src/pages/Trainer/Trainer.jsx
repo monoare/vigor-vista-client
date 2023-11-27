@@ -26,8 +26,8 @@ const Trainer = () => {
 
   if (!profiles) {
     return (
-      <div className="flex justify-center items-center">
-        <span className="loading loading-ring loading-[100px]"></span>
+      <div className="w-5vw flex justify-center items-center mt-40">
+        <span className="loading loading-ring w-[200px]"></span>
       </div>
     );
   }
