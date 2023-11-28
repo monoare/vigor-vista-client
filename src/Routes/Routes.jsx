@@ -15,6 +15,8 @@ import ClassDetails from "../pages/Classes/ClassDetails";
 import Forum from "../pages/Community/Forum";
 import Dashboard from "../layout/Dashboard";
 import AllSubscriber from "../pages/Dashboard/AllSubscriber/AllSubscriber";
+import AllTrainers from "../pages/Dashboard/AllTrainers/AllTrainers";
+import Payment from "../pages/Dashboard/Payment/Payment";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +88,14 @@ const router = createBrowserRouter([
       {
         path: "allSubscriber",
         element: <AllSubscriber />,
+      },
+      {
+        path: "allTrainers",
+        element: <AllTrainers />,
+      },
+      {
+        path: "payment/:trainerId",
+        element: <Payment />,
       },
     ],
   },
