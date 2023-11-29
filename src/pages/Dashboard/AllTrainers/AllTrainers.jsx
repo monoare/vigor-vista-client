@@ -12,7 +12,7 @@ const AllTrainers = () => {
       return res.data;
     },
   });
-
+  refetch();
   const calculateMonthsSinceJoining = (joiningDate) => {
     const today = new Date();
     const joinDate = new Date(joiningDate);
@@ -21,9 +21,9 @@ const AllTrainers = () => {
       (today.getFullYear() - joinDate.getFullYear()) * 12 +
       today.getMonth() -
       joinDate.getMonth();
-    refetch();
     return months;
   };
+  refetch();
 
   // console.log(trainers);
   return (

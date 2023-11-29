@@ -21,6 +21,20 @@ const Dashboard = () => {
               All Trainers
             </NavLink>
           </li>
+
+          <li>
+            <NavLink className="mb-2 text-xl" to="/dashboard/appliedForTrainer">
+              <MdPeopleAlt className="mr-2" />
+              Be A Trainer
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="mb-2 text-xl" to="/dashboard/balance">
+              <MdPeopleAlt className="mr-2" />
+              Balance
+            </NavLink>
+          </li>
+
           <li>
             <NavLink className="mb-2 text-xl" to="/">
               <FaHome className="mr-2" />

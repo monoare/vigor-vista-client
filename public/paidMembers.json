@@ -1,0 +1,56 @@
+[
+  {
+    "trainerId": "6566417b0a9ca5bd21ad0d2e",
+    "trainerName": "Fit Guru",
+    "timeSlot": "08:00-09:00",
+    "packageName": "Silver",
+    "packagePrice": 50,
+    "userName": "Mim",
+    "userEmail": "b@c.com"
+  },
+  {
+    "trainerId": "6566417b0a9ca5bd21ad0d21",
+    "trainerName": "John Doe",
+    "timeSlot": "08:00-09:00",
+    "packageName": "Gold",
+    "packagePrice": 75,
+    "userName": "Kim",
+    "userEmail": "c@d.com"
+  },
+  {
+    "trainerId": "6566417b0a9ca5bd21ad0d2e",
+    "trainerName": "Mamun",
+    "timeSlot": "09:00-10:00",
+    "packageName": "Diamond",
+    "packagePrice": 100,
+    "userName": "Mim",
+    "userEmail": "b@c.com"
+  },
+  {
+    "trainerId": "6566417b0a9ca5bd21ad0d2e",
+    "trainerName": "Fit Guru",
+    "timeSlot": "08:00-09:00",
+    "packageName": "Diamond",
+    "packagePrice": 100,
+    "userName": "Mim",
+    "userEmail": "b@c.com"
+  },
+  {
+    "trainerId": "6566417b0a9ca5bd21ad0d21",
+    "trainerName": "John Doe",
+    "timeSlot": "09:00-10:00",
+    "packageName": "Silver",
+    "packagePrice": 50,
+    "userName": "Kim",
+    "userEmail": "c@d.com"
+  },
+  {
+    "trainerId": "6566417b0a9ca5bd21ad0d2e",
+    "trainerName": "Mamun",
+    "timeSlot": "09:00-10:00",
+    "packageName": "Gold",
+    "packagePrice": 75,
+    "userName": "Mim",
+    "userEmail": "b@c.com"
+  }
+]

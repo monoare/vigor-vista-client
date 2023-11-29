@@ -26,6 +26,7 @@
     "react-spinners": "^0.13.8",
     "react-window": "^1.8.10",
     "react-window-infinite-loader": "^1.0.9",
+    "recharts": "^2.10.2",
     "sweetalert2": "^11.10.1",
     "swiper": "^11.0.5"
   },

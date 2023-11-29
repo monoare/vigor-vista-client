@@ -91,7 +91,15 @@ const Trainer = () => {
                 <p className="mb-1">Available Time Slots:</p>
                 <div className="flex flex-wrap gap-2">
                   {Array.from({ length: profile.dayTime }, (_, index) => (
-                    <Link to={`/userBooking/${profile._id}`} key={index}>
+                    <Link
+                      to={{
+                        pathname: `/userBooking/${profile._id}`,
+                        search: `?timeSlot=${formatTime(
+                          index + 8
+                        )}-${formatTime(index + 9)}`,
+                      }}
+                      key={index}
+                    >
                       <div className="h-8 px-2 py-2 border border-gray-400 rounded-full flex items-center justify-center mr-2 mb-2 text-[12px]">
                         <BiTime className="mr-1" />
                         {`${formatTime(index + 8)}-${formatTime(index + 9)} hr`}

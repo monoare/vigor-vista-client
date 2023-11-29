@@ -1,9 +1,10 @@
 import { Navigate, useLocation } from "react-router-dom";
-import useAuth from "../Hooks/useAuth";
 import { FadeLoader } from "react-spinners";
+import useAuth from "../Hooks/useAuth";
 
-const PrivateRoute = ({ children }) => {
+const AdminRoute = ({ children }) => {
   const { user, loading } = useAuth();
+  const isAdmin = user && user.email === "a@b.com"; // Check if the user's email is the admin email
   const location = useLocation();
 
   if (loading) {
@@ -14,11 +15,12 @@ const PrivateRoute = ({ children }) => {
     );
   }
 
-  if (user) {
+  if (user && isAdmin) {
     return children;
   }
 
-  return <Navigate to="/login" state={{ from: location }} replace />;
+  // Redirect to the home page if the user is not an admin
+  return <Navigate to="/" state={{ from: location }} replace />;
 };
 
-export default PrivateRoute;
+export default AdminRoute;

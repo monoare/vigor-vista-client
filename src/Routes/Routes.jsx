@@ -17,6 +17,11 @@ import Dashboard from "../layout/Dashboard";
 import AllSubscriber from "../pages/Dashboard/AllSubscriber/AllSubscriber";
 import AllTrainers from "../pages/Dashboard/AllTrainers/AllTrainers";
 import Payment from "../pages/Dashboard/Payment/Payment";
+import BeTrainer from "../pages/Dashboard/BeTrainer/BeTrainer";
+import Balance from "../pages/Dashboard/Balance/Balance";
+import AdminRoute from "./AdminRoutes";
+import UserPayment from "../pages/Trainer/UserPayment";
+// import AppliedTrainerDetails from "../pages/Dashboard/BeTrainer/AppliedTrainerDetails";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +71,10 @@ const router = createBrowserRouter([
     element: <UserBooking />,
   },
   {
+    path: "/userPayment/:id",
+    element: <UserPayment />,
+  },
+  {
     path: "/classes",
     element: <Classes />,
   },
@@ -87,15 +96,43 @@ const router = createBrowserRouter([
     children: [
       {
         path: "allSubscriber",
-        element: <AllSubscriber />,
+        element: (
+          <AdminRoute>
+            <AllSubscriber />
+          </AdminRoute>
+        ),
       },
       {
         path: "allTrainers",
-        element: <AllTrainers />,
+        element: (
+          <AdminRoute>
+            <AllTrainers />
+          </AdminRoute>
+        ),
       },
       {
         path: "payment/:trainerId",
-        element: <Payment />,
+        element: (
+          <AdminRoute>
+            <Payment />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "appliedForTrainer",
+        element: (
+          <AdminRoute>
+            <BeTrainer />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "balance",
+        element: (
+          <AdminRoute>
+            <Balance />
+          </AdminRoute>
+        ),
       },
     ],
   },

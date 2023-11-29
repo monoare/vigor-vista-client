@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
 
 const UserBooking = () => {
+  const { id: trainerId } = useParams();
+  const location = useLocation();
+  const timeSlot = new URLSearchParams(location.search).get("timeSlot");
+
+  console.log("Trainer ID:", trainerId);
+
+  console.log("Selected Time Slot Index:", timeSlot);
   const plans = [
     {
       id: 1,
@@ -64,7 +71,12 @@ const UserBooking = () => {
                   <strong>Price:</strong> ${plan.price}
                 </p>
               </div>
-              <Link to={`/joinNow/${plan.id}`}>
+              <Link
+                to={{
+                  pathname: `/userPayment/${plan.id}`,
+                  search: `?timeSlot=${timeSlot}&trainerId=${trainerId}`,
+                }}
+              >
                 <button className="text-white px-6 py-2 mt-2 btn btn-info">
                   Join Now
                 </button>

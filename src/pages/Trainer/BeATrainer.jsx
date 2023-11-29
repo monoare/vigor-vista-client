@@ -65,7 +65,7 @@ const BeATrainer = () => {
       };
       // console.log(trainerProfile);
 
-      const trainerRes = await axiosSecure.post("/trainers", trainerProfile);
+      const trainerRes = await axiosSecure.post("/beTrainer", trainerProfile);
       console.log(trainerRes.data);
       if (trainerRes.data.insertedId) {
         // show success popup

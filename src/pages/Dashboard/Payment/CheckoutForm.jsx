@@ -4,7 +4,6 @@ import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
-import useAuth from "../../../Hooks/useAuth";
 import Swal from "sweetalert2";
 
 const CheckoutForm = ({ trainerId }) => {
@@ -15,7 +14,7 @@ const CheckoutForm = ({ trainerId }) => {
   const axiosSecure = useAxiosSecure();
   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
-  const { user } = useAuth();
+
   // console.log(trainerId);
 
   const { data: trainers, refetch } = useQuery({
@@ -91,19 +90,37 @@ const CheckoutForm = ({ trainerId }) => {
         status: "paid",
         price: totalPrice,
       };
+
+      const adminInfo = {
+        email: trainers?.email,
+        name: trainers?.name,
+        price: totalPrice,
+        transactionId: paymentIntent.id,
+        date: new Date(),
+        status: "Payment Completed",
+      };
+      const adminRes = await axiosSecure.post("/payments", adminInfo);
+      console.log("2nd Done");
       const res = await axiosSecure.put(`/trainers/${trainerId}`, payment);
-      console.log("payment saved", res.data);
+      console.log("3rd Done");
+      console.log("payment saved", adminRes.data, res.data);
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Thank you for the taka paisa",
+        title: "Thank you for the payment",
         showConfirmButton: false,
         timer: 1500,
       });
       navigate("/dashboard/allTrainers");
       refetch();
     } else {
-      console.log("failed");
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: confirmError,
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   };
 
