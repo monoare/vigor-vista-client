@@ -21,6 +21,8 @@ import BeTrainer from "../pages/Dashboard/BeTrainer/BeTrainer";
 import Balance from "../pages/Dashboard/Balance/Balance";
 import AdminRoute from "./AdminRoutes";
 import UserPayment from "../pages/Trainer/UserPayment";
+import ManageSlots from "../pages/Dashboard/TrainerHome/ManageSlots";
+import TrainerRoute from "./TrainerRoute";
 // import AppliedTrainerDetails from "../pages/Dashboard/BeTrainer/AppliedTrainerDetails";
 
 const router = createBrowserRouter([
@@ -94,6 +96,7 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
+      // only for admin
       {
         path: "allSubscriber",
         element: (
@@ -132,6 +135,15 @@ const router = createBrowserRouter([
           <AdminRoute>
             <Balance />
           </AdminRoute>
+        ),
+      },
+      //only for trainer
+      {
+        path: "manageSlots",
+        element: (
+          <TrainerRoute>
+            <ManageSlots />
+          </TrainerRoute>
         ),
       },
     ],

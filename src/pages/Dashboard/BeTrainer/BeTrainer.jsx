@@ -28,12 +28,11 @@ const BeTrainer = () => {
       weekTime: user?.weekTime,
       status: "Trainer",
     };
-    const res = await axiosSecure.put(`/beTrainer/${trainerId}`, updatedDoc);
-    console.log("Server response:", res.data);
+    await axiosSecure.put(`/beTrainer/${trainerId}`, updatedDoc);
+    // console.log("Server response:", res.data);
     refetch();
   };
   refetch();
-
   // console.log(beTrainers);
 
   return (
@@ -82,12 +81,17 @@ const BeTrainer = () => {
                         <button
                           className="btn"
                           onClick={() =>
-                            document.getElementById("my_modal_5").showModal()
+                            document
+                              .getElementById(`my_modal_${trainer._id}`)
+                              .showModal()
                           }
                         >
                           <FaEye></FaEye>
                         </button>
-                        <dialog id="my_modal_5" className="modal modal-middle">
+                        <dialog
+                          id={`my_modal_${trainer._id}`}
+                          className="modal modal-middle"
+                        >
                           <div className="modal-box">
                             <div className="flex justify-center">
                               <img

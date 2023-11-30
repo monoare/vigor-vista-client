@@ -4,7 +4,7 @@
     "trainerName": "Fit Guru",
     "timeSlot": "08:00-09:00",
     "packageName": "Silver",
-    "packagePrice": 50,
+    "packagePrice": 500,
     "userName": "Mim",
     "userEmail": "b@c.com"
   },
@@ -13,7 +13,7 @@
     "trainerName": "John Doe",
     "timeSlot": "08:00-09:00",
     "packageName": "Gold",
-    "packagePrice": 75,
+    "packagePrice": 750,
     "userName": "Kim",
     "userEmail": "c@d.com"
   },
@@ -22,7 +22,7 @@
     "trainerName": "Mamun",
     "timeSlot": "09:00-10:00",
     "packageName": "Diamond",
-    "packagePrice": 100,
+    "packagePrice": 1000,
     "userName": "Mim",
     "userEmail": "b@c.com"
   },
@@ -31,7 +31,7 @@
     "trainerName": "Fit Guru",
     "timeSlot": "08:00-09:00",
     "packageName": "Diamond",
-    "packagePrice": 100,
+    "packagePrice": 1000,
     "userName": "Mim",
     "userEmail": "b@c.com"
   },
@@ -40,7 +40,7 @@
     "trainerName": "John Doe",
     "timeSlot": "09:00-10:00",
     "packageName": "Silver",
-    "packagePrice": 50,
+    "packagePrice": 500,
     "userName": "Kim",
     "userEmail": "c@d.com"
   },
@@ -49,7 +49,7 @@
     "trainerName": "Mamun",
     "timeSlot": "09:00-10:00",
     "packageName": "Gold",
-    "packagePrice": 75,
+    "packagePrice": 750,
     "userName": "Mim",
     "userEmail": "b@c.com"
   }

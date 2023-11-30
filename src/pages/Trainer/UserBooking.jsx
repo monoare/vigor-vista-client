@@ -16,7 +16,7 @@ const UserBooking = () => {
       name: "Silver",
       classes: 10,
       facilities: ["Gym Access", "Basic Training"],
-      price: 50,
+      price: 500,
       color: "bg-[#C0C0C0]",
       textColor: "text-black",
     },
@@ -25,7 +25,7 @@ const UserBooking = () => {
       name: "Gold",
       classes: 20,
       facilities: ["Gym Access", "Advanced Training", "Nutrition Consultation"],
-      price: 75,
+      price: 750,
       color: "bg-[#FFD700]",
       textColor: "text-white",
     },
@@ -39,7 +39,7 @@ const UserBooking = () => {
         "Nutrition Consultation",
         "Spa Access",
       ],
-      price: 100,
+      price: 1000,
       color: "bg-[#E6E6E6]",
       textColor: "text-black",
     },
@@ -53,7 +53,7 @@ const UserBooking = () => {
           Choose Your Plan
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
-          {plans.map((plan) => (
+          {plans?.map((plan) => (
             <div
               key={plan.id}
               className={`p-6 rounded-lg shadow-lg ${plan.color} ${plan.textColor}`}

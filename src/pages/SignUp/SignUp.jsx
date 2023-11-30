@@ -27,7 +27,12 @@ const SignUp = () => {
       updateUserProfile(data.name, data.photoURL)
         .then(() => {
           // created user will be send to the database
-          const userInfo = { name: data.name, email: data.email };
+          const userInfo = {
+            name: data?.name,
+            email: data?.email,
+            photoURL: data?.photoURL,
+            status: "Member",
+          };
           axiosPublic.post("/users", userInfo).then((res) => {
             // console.log(userInfo);
             if (res.data.insertedId) {

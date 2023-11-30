@@ -19,7 +19,7 @@ const TrainerDetails = () => {
 
   // Generate time slots based on available time
   const timeSlots = Array.from(
-    { length: trainerDetails.dayTime },
+    { length: trainerDetails?.dayTime },
     (_, index) => index + 1
   );
 
@@ -64,7 +64,7 @@ const TrainerDetails = () => {
                 Available Time Slots:
               </p>
               <div className="flex flex-wrap">
-                {timeSlots.map((slot) => (
+                {timeSlots?.map((slot) => (
                   <div
                     key={slot}
                     className="w-32 h-16 border border-gray-400 rounded-full flex items-center justify-center mr-2 mb-2 bg-blue-200 text-blue-800"
