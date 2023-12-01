@@ -26,6 +26,7 @@ import TrainerRoute from "./TrainerRoute";
 import SendEmail from "../pages/Dashboard/TrainerHome/SendEmail";
 import ManageMember from "../pages/Dashboard/TrainerHome/ManageMember";
 import AddNewForum from "../pages/Dashboard/Shared/AddNewForum";
+import AddNewClass from "../pages/Dashboard/TrainerHome/AddNewClass";
 // import AppliedTrainerDetails from "../pages/Dashboard/BeTrainer/AppliedTrainerDetails";
 
 const router = createBrowserRouter([
@@ -140,6 +141,11 @@ const router = createBrowserRouter([
           </AdminRoute>
         ),
       },
+      {
+        path: "addNewForum",
+        element: <AddNewForum />,
+      },
+
       //only for trainer
       {
         path: "manageSlots",
@@ -151,15 +157,35 @@ const router = createBrowserRouter([
       },
       {
         path: "sendEmail/:email/:name",
-        element: <SendEmail />,
+        element: (
+          <TrainerRoute>
+            <SendEmail />
+          </TrainerRoute>
+        ),
       },
       {
         path: "manageMember",
-        element: <ManageMember />,
+        element: (
+          <TrainerRoute>
+            <ManageMember />
+          </TrainerRoute>
+        ),
       },
       {
         path: "addNewForum",
-        element: <AddNewForum />,
+        element: (
+          <TrainerRoute>
+            <AddNewForum />
+          </TrainerRoute>
+        ),
+      },
+      {
+        path: "addNewClass",
+        element: (
+          <TrainerRoute>
+            <AddNewClass />
+          </TrainerRoute>
+        ),
       },
     ],
   },

@@ -45,6 +45,12 @@ const Dashboard = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink className="mb-2 text-xl" to="/dashboard/addNewForum">
+                  <MdPeopleAlt className="mr-2" />
+                  Add New Forum
+                </NavLink>
+              </li>
+              <li>
                 <NavLink className="mb-2 text-xl" to="/">
                   <FaHome className="mr-2" />
                   Home
@@ -73,6 +79,12 @@ const Dashboard = () => {
                 <NavLink className="mb-2 text-xl" to="/dashboard/addNewForum">
                   <MdPeopleAlt className="mr-2" />
                   Add New Forum
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="mb-2 text-xl" to="/dashboard/addNewClass">
+                  <MdPeopleAlt className="mr-2" />
+                  Add New Class
                 </NavLink>
               </li>
               <li>

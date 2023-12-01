@@ -6,6 +6,8 @@ const useTrainer = () => {
   const axiosSecure = useAxiosSecure();
   const { user, loading } = useAuth();
 
+  console.log(user);
+
   // Fetch trainers data
   const { data: isTrainer, isPending: isTrainerLoading } = useQuery({
     enabled: !loading,
@@ -18,7 +20,6 @@ const useTrainer = () => {
 
       try {
         const res = await axiosSecure.get(`/trainers/train/${user.email}`); // Update the route here
-
         return res.data?.status;
       } catch (error) {
         console.error("Error fetching trainer data:", error);

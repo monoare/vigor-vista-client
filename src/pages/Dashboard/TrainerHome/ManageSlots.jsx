@@ -60,8 +60,8 @@ const ManageSlots = () => {
   };
 
   refetch();
-  console.log("trainer", trainer);
-  console.log("PaidMembers", paidMembers);
+  // console.log("trainer", trainer);
+  // console.log("PaidMembers", paidMembers);
 
   return (
     <div>

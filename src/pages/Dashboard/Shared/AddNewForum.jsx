@@ -25,7 +25,7 @@ const AddNewForum = () => {
 
     // image upload to the imgbb website and then get the url
     const imageFile = { image: data.image[0] };
-    console.log(imageFile);
+    // console.log(imageFile);
     const res = await axiosPublic.post(image_hosting_api, imageFile, {
       headers: { "Content-Type": "multipart/form-data" },
     });
@@ -45,10 +45,10 @@ const AddNewForum = () => {
         upVote: 0,
         downVote: 0,
       };
-      console.log(forumDetails);
+      // console.log(forumDetails);
 
       const forumRes = await axiosSecure.post("/forums", forumDetails);
-      console.log(forumRes.data);
+      // console.log(forumRes.data);
       if (forumRes.data.insertedId) {
         // show success popup
         reset();
@@ -61,7 +61,7 @@ const AddNewForum = () => {
         });
       }
     }
-    console.log("with image url", res.data);
+    // console.log("with image url", res.data);
   };
 
   return (

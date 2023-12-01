@@ -28,7 +28,7 @@ const ManageMember = () => {
       return trainerData;
     },
   });
-  console.log(paidMembers);
+  // console.log(paidMembers);
   return (
     <div>
       <h1 className="text-3xl text-center font-semibold my-10">
@@ -55,7 +55,7 @@ const ManageMember = () => {
                 <td>{paidMember?.userName}</td>
                 <td>{paidMember?.userEmail}</td>
                 <td>{paidMember?.packageName}</td>
-                <td>{paidMember?.packagePrice}</td>
+                <td>${paidMember?.packagePrice}</td>
               </tr>
             ))}
           </tbody>
