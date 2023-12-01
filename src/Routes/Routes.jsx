@@ -27,6 +27,10 @@ import SendEmail from "../pages/Dashboard/TrainerHome/SendEmail";
 import ManageMember from "../pages/Dashboard/TrainerHome/ManageMember";
 import AddNewForum from "../pages/Dashboard/Shared/AddNewForum";
 import AddNewClass from "../pages/Dashboard/TrainerHome/AddNewClass";
+import ActivityLog from "../pages/Dashboard/MemberHome/ActivityLog";
+import ProfileSetting from "../pages/Dashboard/MemberHome/ProfileSetting";
+import RecommendedClasses from "../pages/Dashboard/MemberHome/RecommendedClasses";
+import MemberRoute from "./MemberRoute";
 // import AppliedTrainerDetails from "../pages/Dashboard/BeTrainer/AppliedTrainerDetails";
 
 const router = createBrowserRouter([
@@ -186,6 +190,23 @@ const router = createBrowserRouter([
             <AddNewClass />
           </TrainerRoute>
         ),
+      },
+      //only for member
+      {
+        path: "activityLog",
+        element: (
+          <MemberRoute>
+            <ActivityLog />
+          </MemberRoute>
+        ),
+      },
+      {
+        path: "profileSetting",
+        element: <ProfileSetting />,
+      },
+      {
+        path: "recommendedClasses",
+        element: <RecommendedClasses />,
       },
     ],
   },

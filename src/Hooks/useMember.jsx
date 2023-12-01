@@ -2,24 +2,25 @@ import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "./useAxiosSecure";
 import useAuth from "./useAuth";
 
-const useTrainer = () => {
+const useMember = () => {
   const axiosSecure = useAxiosSecure();
   const { user, loading } = useAuth();
 
-  // console.log(user);
+  //   console.log("useMember", user);
 
-  // Fetch trainers data
-  const { data: isTrainer, isPending: isTrainerLoading } = useQuery({
+  // Fetch member data
+  const { data: isMember, isPending: isMemberLoading } = useQuery({
     enabled: !loading,
-    queryKey: ["isTrainer", user?.email],
+    queryKey: ["Member", user?.email, "res"],
     queryFn: async () => {
-      if (!user || !user?.email) {
+      if (!user || !user.email) {
         console.error("User or user email is not available.");
         return false; // Return a default value
       }
 
       try {
-        const res = await axiosSecure.get(`/trainers/train/${user?.email}`); // Update the route here
+        const res = await axiosSecure.get(`/users/member/${user.email}`); // Update the route here
+        // console.log("Member", res.data?.status);
         return res.data?.status;
       } catch (error) {
         console.error("Error fetching trainer data:", error);
@@ -29,7 +30,9 @@ const useTrainer = () => {
     },
   });
 
-  return [isTrainer, isTrainerLoading];
+  //   console.log(isMember);
+
+  return [isMember, isMemberLoading];
 };
 
-export default useTrainer;
+export default useMember;

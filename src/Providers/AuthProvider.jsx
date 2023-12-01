@@ -42,12 +42,18 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  const updateUserProfile = (name, photo) => {
+  const updateUserProfile = async (name, photo, newPassword) => {
     setLoading(true);
-    return updateProfile(auth.currentUser, {
+    updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: photo,
     });
+    // Update password if newPassword is provided
+    if (newPassword) {
+      await auth.currentUser.updatePassword(newPassword);
+    }
+    setLoading(false);
+    return { success: true, error: null };
   };
 
   useEffect(() => {

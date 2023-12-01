@@ -1,12 +1,22 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
-import { MdPeopleAlt, MdUnsubscribe } from "react-icons/md";
+import {
+  MdPeopleAlt,
+  MdUnsubscribe,
+  MdOutlineForum,
+  MdOutlineRecommend,
+} from "react-icons/md";
+import { SiGoogleclassroom } from "react-icons/si";
+import { FiActivity } from "react-icons/fi";
 import { FcOvertime } from "react-icons/fc";
+import { IoSettings } from "react-icons/io5";
 import useTrainer from "../Hooks/useTrainer";
 import useAuth from "../Hooks/useAuth";
+import useMember from "../Hooks/useMember";
 
 const Dashboard = () => {
   const [isTrainer] = useTrainer();
+  const [isMember] = useMember();
   const { user } = useAuth();
   const email = user?.email;
   const admin = "a@b.com";
@@ -50,12 +60,6 @@ const Dashboard = () => {
                   Add New Forum
                 </NavLink>
               </li>
-              <li>
-                <NavLink className="mb-2 text-xl" to="/">
-                  <FaHome className="mr-2" />
-                  Home
-                </NavLink>
-              </li>
             </>
           )}
           {isTrainer && (
@@ -77,24 +81,56 @@ const Dashboard = () => {
               </li>
               <li>
                 <NavLink className="mb-2 text-xl" to="/dashboard/addNewForum">
-                  <MdPeopleAlt className="mr-2" />
+                  <MdOutlineForum className="mr-2" />
                   Add New Forum
                 </NavLink>
               </li>
               <li>
                 <NavLink className="mb-2 text-xl" to="/dashboard/addNewClass">
-                  <MdPeopleAlt className="mr-2" />
+                  <SiGoogleclassroom className="mr-2" />
                   Add New Class
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="mb-2 text-xl" to="/">
-                  <FaHome className="mr-2" />
-                  Home
                 </NavLink>
               </li>
             </>
           )}
+
+          {isMember && (
+            <>
+              <p className="text-xl font-bold mb-2 text-center">
+                Welcome {user?.displayName ? user?.displayName : ""}!
+              </p>
+              <li>
+                <NavLink className="mb-2 text-xl" to="/dashboard/activityLog">
+                  <FiActivity className="mr-2" />
+                  Activity Log
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="mb-2 text-xl"
+                  to="/dashboard/profileSetting"
+                >
+                  <IoSettings className="mr-2" />
+                  Profile Setting
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="mb-2 text-xl"
+                  to="/dashboard/recommendedClasses"
+                >
+                  <MdOutlineRecommend className="mr-2" />
+                  Recommended Classes
+                </NavLink>
+              </li>
+            </>
+          )}
+          <li>
+            <NavLink className="mb-2 text-xl" to="/">
+              <FaHome className="mr-2" />
+              Home
+            </NavLink>
+          </li>
         </ul>
       </div>
 
