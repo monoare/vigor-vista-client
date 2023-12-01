@@ -23,6 +23,9 @@ import AdminRoute from "./AdminRoutes";
 import UserPayment from "../pages/Trainer/UserPayment";
 import ManageSlots from "../pages/Dashboard/TrainerHome/ManageSlots";
 import TrainerRoute from "./TrainerRoute";
+import SendEmail from "../pages/Dashboard/TrainerHome/SendEmail";
+import ManageMember from "../pages/Dashboard/TrainerHome/ManageMember";
+import AddNewForum from "../pages/Dashboard/Shared/AddNewForum";
 // import AppliedTrainerDetails from "../pages/Dashboard/BeTrainer/AppliedTrainerDetails";
 
 const router = createBrowserRouter([
@@ -145,6 +148,18 @@ const router = createBrowserRouter([
             <ManageSlots />
           </TrainerRoute>
         ),
+      },
+      {
+        path: "sendEmail/:email/:name",
+        element: <SendEmail />,
+      },
+      {
+        path: "manageMember",
+        element: <ManageMember />,
+      },
+      {
+        path: "addNewForum",
+        element: <AddNewForum />,
       },
     ],
   },

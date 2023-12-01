@@ -187,7 +187,7 @@ const Forum = () => {
                   {/* Additional details can be added as needed */}
                   <div className="mt-5">
                     <div>
-                      {post?.description.map((singleLine, index) => (
+                      {post?.description?.map((singleLine, index) => (
                         <p className="pb-4 text-justify" key={index}>
                           {singleLine}
                         </p>

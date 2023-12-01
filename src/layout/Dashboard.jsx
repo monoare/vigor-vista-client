@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { MdPeopleAlt, MdUnsubscribe } from "react-icons/md";
+import { FcOvertime } from "react-icons/fc";
 import useTrainer from "../Hooks/useTrainer";
 import useAuth from "../Hooks/useAuth";
 
@@ -58,17 +59,26 @@ const Dashboard = () => {
               </p>
               <li>
                 <NavLink className="mb-2 text-xl" to="/dashboard/manageSlots">
-                  <MdPeopleAlt className="mr-2" />
+                  <FcOvertime className="mr-2" />
                   Manage Slots
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  className="mb-2 text-xl"
-                  to="/dashboard/appliedForTrainer"
-                >
+                <NavLink className="mb-2 text-xl" to="/dashboard/manageMember">
                   <MdPeopleAlt className="mr-2" />
-                  new Trainer
+                  Manage Member
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="mb-2 text-xl" to="/dashboard/addNewForum">
+                  <MdPeopleAlt className="mr-2" />
+                  Add New Forum
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="mb-2 text-xl" to="/">
+                  <FaHome className="mr-2" />
+                  Home
                 </NavLink>
               </li>
             </>
