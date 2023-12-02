@@ -31,12 +31,14 @@ import ActivityLog from "../pages/Dashboard/MemberHome/ActivityLog";
 import ProfileSetting from "../pages/Dashboard/MemberHome/ProfileSetting";
 import RecommendedClasses from "../pages/Dashboard/MemberHome/RecommendedClasses";
 import MemberRoute from "./MemberRoute";
+import ErrorPage from "../ErrorPage";
 // import AppliedTrainerDetails from "../pages/Dashboard/BeTrainer/AppliedTrainerDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

@@ -1,62 +1,86 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import CatalogMagic from "./loader";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
 
 const Gallery = () => {
-  const [items, setItems] = useState([]);
-  const [page, setPage] = useState(1);
-  const [totalItems, setTotalItems] = useState(24);
+  const [dataSource, setDataSource] = useState([]);
+  const [hasMore, setHasMore] = useState(true);
+  const axiosPublic = useAxiosPublic();
 
-  const fetchData = () => {
-    fetch("/galleryData.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setItems([...items, ...data]); // Concatenate new data with existing data
-        setPage(page + 1);
-        setTotalItems(data.total);
-      });
-  };
+  const { data: photos } = useQuery({
+    queryKey: ["photos"],
+    queryFn: async () => {
+      const res = await axiosPublic.get("/pictures");
+      return res.data;
+    },
+  });
 
   useEffect(() => {
-    fetchData(); // Load initial data
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    if (photos) {
+      // Display only the first four photos initially
+      setDataSource(photos.slice(0, 12));
+    }
+  }, [photos]);
+
+  const fetchMoreData = () => {
+    // MAKING API CALL
+    if (dataSource.length < photos.length) {
+      // Load more photos as needed
+      setTimeout(() => {
+        const nextSet = photos.slice(dataSource.length, dataSource.length + 12);
+        setDataSource([...dataSource, ...nextSet]);
+      }, 500);
+    } else {
+      setHasMore(false);
+    }
+  };
 
   return (
-    <>
-      <Navbar />
-      <div className="pt-28">
-        <p className="fixed -z-10 text-4xl font-bold text-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          Visual Showcase
-        </p>
-        <InfiniteScroll
-          dataLength={items.length}
-          next={fetchData}
-          hasMore={items.length < totalItems}
-          loader={<CatalogMagic height={400}></CatalogMagic>}
-          endMessage={
-            <p className="text-xl text-center my-4">
-              Wow, you&apos;ve seen it all!
-            </p>
-          }
-        >
-          <div className="grid grid-cols-4 gap-4 z-10">
-            {items.map((item) => (
-              <div key={item.id} className="shadow-lg">
-                <img
-                  src={item.src}
-                  alt={item.title}
-                  className="object-cover h-48 w-full p-4"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-        </InfiniteScroll>
+    <div>
+      <div>
+        <Navbar />
       </div>
-      <Footer />
-    </>
+      <div className=" pt-28">
+        <div className="container z-100 p-8">
+          <InfiniteScroll
+            dataLength={dataSource.length}
+            next={fetchMoreData}
+            hasMore={hasMore}
+            loader={
+              <div className="skeleton grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+            }
+            endMessage={
+              <p className="text-center text-gray-500">
+                You&apos;ve seen all the photos!
+              </p>
+            }
+            height={"80vh"}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {dataSource.map((item, index) => (
+                <div className="border-2 p-4" key={index}>
+                  {/* Render your photo data here */}
+                  <img
+                    className="w-full h-auto rounded-lg shadow-md"
+                    src={item.src}
+                    alt={`Photo ${index + 1}`}
+                  />
+                </div>
+              ))}
+            </div>
+          </InfiniteScroll>
+          <p className="absolute top-1/2 -z-10 left-1/2 transform -translate-x-1/2 text-2xl font-bold text-gray-300">
+            Visualization of gallery
+          </p>
+        </div>
+      </div>
+      <div className="mt-40">
+        <Footer />
+      </div>
+    </div>
   );
 };
 
