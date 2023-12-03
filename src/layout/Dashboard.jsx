@@ -128,7 +128,7 @@ const Dashboard = () => {
           <li>
             <NavLink className="mb-2 text-xl" to="/">
               <FaHome className="mr-2" />
-              Home
+              Go to Home
             </NavLink>
           </li>
         </ul>

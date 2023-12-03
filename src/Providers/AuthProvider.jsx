@@ -52,7 +52,6 @@ const AuthProvider = ({ children }) => {
     if (newPassword) {
       await auth.currentUser.updatePassword(newPassword);
     }
-    setLoading(false);
     return { success: true, error: null };
   };
 
