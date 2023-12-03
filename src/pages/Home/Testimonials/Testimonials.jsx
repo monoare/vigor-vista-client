@@ -12,8 +12,8 @@ import profileImage6 from "../../../assets/profile/image (12).jpg";
 
 const Testimonials = () => {
   return (
-    <div className="py-20">
-      <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-10 w-1/2 mx-auto text-center">
+    <div className="py-4 md:py-20">
+      <h1 className="text-base md:text-2xl lg:text-4xl font-bold md:mb-10 w-1/2 mx-auto text-center">
         Transformative Tales: Real Stories of Success with Our Fitness Platform
       </h1>
       <Swiper
@@ -22,7 +22,7 @@ const Testimonials = () => {
         className="mySwiper w-2/3"
       >
         <SwiperSlide className="flex flex-col items-center justify-center">
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center md:mb-5">
             <img
               src={profileImage1}
               alt="Profile 1"
@@ -30,8 +30,8 @@ const Testimonials = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-bold text-gray-800 pb-5">Sarah W.</p>
-            <p className="text-gray-600">
+            <p className="md:text-lg font-bold text-gray-800 pb-5">Sarah W.</p>
+            <p className="text-gray-600 text-xs md:text-lg">
               &ldquo;Joining this fitness platform was a game-changer for me.
               The personalized workout plans and expert guidance helped me
               achieve my fitness goals faster than I ever imagined. I&apos;ve
@@ -41,7 +41,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center md:mb-5">
             <img
               src={profileImage2}
               alt="Profile 1"
@@ -49,8 +49,8 @@ const Testimonials = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-bold text-gray-800 pb-5">Emily S.</p>
-            <p className="text-gray-600">
+            <p className="md:text-lg font-bold text-gray-800 pb-5">Emily S.</p>
+            <p className="text-gray-600 text-xs md:text-lg">
               &ldquo;I was skeptical at first, but after a month of using this
               platform, I can&apos;t imagine my fitness journey without it. The
               variety of workouts keeps things interesting, and the progress
@@ -61,7 +61,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center md:mb-5">
             <img
               src={profileImage3}
               alt="Profile 1"
@@ -69,8 +69,8 @@ const Testimonials = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-bold text-gray-800 pb-5">Jason M.</p>
-            <p className="text-gray-600">
+            <p className="md:text-lg font-bold text-gray-800 pb-5">Jason M.</p>
+            <p className="text-gray-600 text-xs md:text-lg">
               &ldquo;As a busy professional, finding time for the gym was always
               a challenge. This platform&apos;s flexibility allowed me to work
               out on my own schedule. Thanks to the convenience and
@@ -81,7 +81,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center md:mb-5">
             <img
               src={profileImage4}
               alt="Profile 1"
@@ -89,8 +89,8 @@ const Testimonials = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-bold text-gray-800 pb-5">Alex P.</p>
-            <p className="text-gray-600">
+            <p className="md:text-lg font-bold text-gray-800 pb-5">Alex P.</p>
+            <p className="text-gray-600 text-xs md:text-lg">
               &ldquo;I&apos;ve tried countless fitness apps, but this one stands
               out. The community support is incredible, and the trainers are so
               motivating. I never thought I&apos;d enjoy working out this much.
@@ -101,7 +101,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center md:mb-5">
             <img
               src={profileImage5}
               alt="Profile 1"
@@ -109,8 +109,8 @@ const Testimonials = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-bold text-gray-800 pb-5">Mark R.</p>
-            <p className="text-gray-600">
+            <p className="md:text-lg font-bold text-gray-800 pb-5">Mark R.</p>
+            <p className="text-gray-600 text-xs md:text-lg">
               &ldquo;I&apos;ve been a fitness enthusiast for years, but this
               platform took my training to a whole new level. The detailed
               analytics helped me identify areas for improvement, and the
@@ -122,7 +122,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <div className="flex justify-center mb-5">
+          <div className="flex justify-center md:mb-5">
             <img
               src={profileImage6}
               alt="Profile 1"
@@ -130,8 +130,10 @@ const Testimonials = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-bold text-gray-800 pb-5">Jessica L.</p>
-            <p className="text-gray-600">
+            <p className="md:text-lg font-bold text-gray-800 pb-5">
+              Jessica L.
+            </p>
+            <p className="text-gray-600 text-xs md:text-lg">
               &ldquo;After having two kids, I struggled to find the motivation
               to get back in shape. This platform made it easy with its
               postpartum-friendly workouts and supportive community. I&apos;m

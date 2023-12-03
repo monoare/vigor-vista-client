@@ -1,18 +1,31 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { FaEye } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const BeTrainer = () => {
   const axiosSecure = useAxiosSecure();
 
-  const { data: beTrainers, refetch } = useQuery({
+  const {
+    data: beTrainers,
+    isLoading,
+    refetch,
+  } = useQuery({
     queryKey: ["trainers"],
     queryFn: async () => {
       const res = await axiosSecure.get("/beTrainer");
       return res.data;
     },
   });
+
+  if (isLoading) {
+    return (
+      <div className="w-5vw flex justify-center items-center mt-40">
+        <span className="loading loading-ring w-[200px]"></span>
+      </div>
+    );
+  }
 
   const handleConfirm = async (trainerId, user) => {
     const updatedDoc = {
@@ -29,6 +42,9 @@ const BeTrainer = () => {
       status: "Trainer",
     };
     await axiosSecure.put(`/beTrainer/${trainerId}`, updatedDoc);
+
+    await axiosSecure.patch(`/users/updateStatus/${user.email}`);
+
     // console.log("Server response:", res.data);
     refetch();
   };
@@ -106,7 +122,7 @@ const BeTrainer = () => {
                               </h3>
                               <p>Email: {trainer?.email} </p>
                               <p className="py-2">
-                                Experience: {trainer?.experience}
+                                Experience: {trainer?.experience} years
                               </p>
                               <p>
                                 Skills:
@@ -138,9 +154,13 @@ const BeTrainer = () => {
                               >
                                 Confirmation
                               </button>
-                              <button className="btn btn-primary">
-                                Reject
-                              </button>
+                              <Link
+                                to={`/dashboard/rejectEmail/${trainer._id}`}
+                              >
+                                <button className="btn btn-primary">
+                                  Reject
+                                </button>
+                              </Link>
                             </div>
                             <div className="modal-middle">
                               <form method="dialog">

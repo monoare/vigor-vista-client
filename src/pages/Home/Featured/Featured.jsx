@@ -6,7 +6,7 @@ import functional from "../../../assets/image/Functional Fitness.jpg";
 const Featured = () => {
   return (
     <div className="mb-20 mt-10">
-      <h1 className="text-4xl my-5 text-center">
+      <h1 className="text-xl md:text-4xl px-2 md:my-5 text-center">
         Explore Our Comprehensive Fitness Ecosystem
       </h1>
 
@@ -16,8 +16,8 @@ const Featured = () => {
             <img src={cardio} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Cardio</h2>
-            <p>
+            <h2 className="card-title text-base md:text-xl">Cardio</h2>
+            <p className="text-xs md:text-lg">
               Get fitter and burn calories. These classes are for anyone that
               loves music and energy.
             </p>
@@ -29,8 +29,8 @@ const Featured = () => {
             <img src={sculpt} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Sculpt & Tone</h2>
-            <p>
+            <h2 className="card-title text-base md:text-xl">Sculpt & Tone</h2>
+            <p className="text-xs md:text-lg">
               Change the shape of your body by strengthening and conditioning
               your muscles.
             </p>
@@ -42,8 +42,8 @@ const Featured = () => {
             <img src={mind} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Mind & Body</h2>
-            <p>
+            <h2 className="card-title text-base md:text-xl">Mind & Body</h2>
+            <p className="text-xs md:text-lg">
               All rounder classes for wellbeing, core strength, flexibility and
               low impact conditioning.
             </p>
@@ -54,7 +54,7 @@ const Featured = () => {
             <img src={functional} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Functional</h2>
+            <h2 className="card-title text-base md:text-xl">Functional</h2>
             <p>
               Feel stronger and fitter using functional kit such as battle
               ropes, assault bikes and kettlebells.

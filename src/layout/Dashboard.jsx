@@ -62,7 +62,7 @@ const Dashboard = () => {
               </li>
             </>
           )}
-          {isTrainer && (
+          {isTrainer === "Trainer" && (
             <>
               <p className="text-xl font-bold mb-2 text-center">
                 Welcome {user?.displayName ? user?.displayName : ""}!
@@ -94,7 +94,7 @@ const Dashboard = () => {
             </>
           )}
 
-          {isMember && (
+          {isMember === "Member" && (
             <>
               <p className="text-xl font-bold mb-2 text-center">
                 Welcome {user?.displayName ? user?.displayName : ""}!

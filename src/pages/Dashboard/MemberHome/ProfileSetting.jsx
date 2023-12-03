@@ -2,6 +2,7 @@ import { useState } from "react";
 import useAuth from "../../../Hooks/useAuth";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 const ProfileSetting = () => {
   const { user, updateUserProfile } = useAuth();
@@ -49,6 +50,9 @@ const ProfileSetting = () => {
   console.log(user);
   return (
     <div>
+      <Helmet>
+        <title>Vigor Vista | Profile</title>
+      </Helmet>
       <h1 className="text-3xl text-center font-semibold mb-6">Edit Profile</h1>
       <div className="mx-auto max-w-xs rounded-xl rotate-3 bg-slate-400 shadow-lg">
         <img

@@ -14,9 +14,9 @@ const LatestArticles = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 py-10">
+    <div className="bg-gray-100 py-3 md:py-10">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-gray-800 text-center">
           Journey into Health: Recent Articles
         </h2>
         <div>
@@ -30,14 +30,16 @@ const LatestArticles = () => {
                 alt={article.title}
                 className="w-full h-1/ object-cover mb-4 rounded"
               />
-              <h3 className="text-xl font-bold mb-2">{article.title}</h3>
-              <p className="text-gray-600 mb-2">
+              <h3 className="text-base md:text-xl font-bold mb-2">
+                {article.title}
+              </h3>
+              <p className="text-sm md:text-base text-gray-600 mb-2">
                 By {article.author} on {article.date}
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-sm md:text-base text-gray-700 mb-4">
                 {trimText(article.description, 200)}
                 <Link to={`/fullBlog/${article.id}`}>
-                  <button className="ml-4 text-green-500 font-semibold">
+                  <button className="md:ml-4 text-xs md:text-base text-green-500 font-semibold">
                     Read More
                   </button>
                 </Link>

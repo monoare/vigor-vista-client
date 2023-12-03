@@ -72,8 +72,10 @@ const SignUp = () => {
       >
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Sign Up now!</h1>
-            <p className="py-6 text-black font-semibold text-xl">
+            <h1 className=" text-xl pt-16 md:pt-0 ms:text-5xl font-bold">
+              Sign Up now!
+            </h1>
+            <p className="py-6 text-black font-semibold text-xs md:text-xl">
               Embark on a journey of discovery and growth with us. Sign up today
               to unlock a world of opportunities, where your aspirations and
               ambitions find a home. Join our community, and let&apos;s create a

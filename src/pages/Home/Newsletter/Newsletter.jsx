@@ -36,12 +36,12 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center my-20">
-      <header className="text-3xl font-bold text-center mb-5">
+    <div className="flex flex-col justify-center my-3 md:my-20">
+      <header className="text-xl md:text-3xl font-bold text-center mb-5">
         Subscribe to Our Newsletter
       </header>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10">
-        <div className="text-justify pl-10">
+        <div className="text-xs md:text-base text-justify px-3 md:px-0 md:pl-10">
           Stay in the loop with the latest updates, news, and exclusive content
           by subscribing to our newsletter. Enter your name and email address
           below, and click &apos;Subscribe&apos; to join our community. Be the
@@ -50,7 +50,7 @@ const Newsletter = () => {
           a curated experience tailored just for you!
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <fieldset className="form-control w-80">
+          <fieldset className="form-control text-xs md:text-base mx-3 md:w-80">
             <label className="label">
               <span className="label-text">Enter your name</span>
             </label>
@@ -60,7 +60,7 @@ const Newsletter = () => {
                 name="name"
                 {...register("name", { required: true })}
                 placeholder="Your Name"
-                className="input input-bordered join-item w-full"
+                className="input input-bordered text-xs md:text-base join-item w-full"
                 required
               />
               {errors.name && (
@@ -77,7 +77,7 @@ const Newsletter = () => {
                 name="email"
                 {...register("email", { required: true })}
                 placeholder="username@site.com"
-                className="input input-bordered join-item w-full"
+                className="input input-bordered join-item w-full text-xs md:text-base"
                 required
               />
               {errors.email && (

@@ -1,7 +1,7 @@
 [
   {
     "trainerId": "6566417b0a9ca5bd21ad0d2e",
-    "trainerName": "Fit Guru",
+    "trainerName": "Alex Walker",
     "timeSlot": "08:00-09:00",
     "packageName": "Silver",
     "packagePrice": 500,
@@ -10,7 +10,7 @@
   },
   {
     "trainerId": "6566417b0a9ca5bd21ad0d21",
-    "trainerName": "John Doe",
+    "trainerName": "Sophie Turner",
     "timeSlot": "08:00-09:00",
     "packageName": "Gold",
     "packagePrice": 750,
@@ -19,7 +19,7 @@
   },
   {
     "trainerId": "6566417b0a9ca5bd21ad0d2e",
-    "trainerName": "Mamun",
+    "trainerName": "Matthew Harris",
     "timeSlot": "09:00-10:00",
     "packageName": "Diamond",
     "packagePrice": 1000,
@@ -28,7 +28,7 @@
   },
   {
     "trainerId": "6566417b0a9ca5bd21ad0d2e",
-    "trainerName": "Fit Guru",
+    "trainerName": "Ella White",
     "timeSlot": "08:00-09:00",
     "packageName": "Diamond",
     "packagePrice": 1000,
@@ -37,7 +37,7 @@
   },
   {
     "trainerId": "6566417b0a9ca5bd21ad0d21",
-    "trainerName": "John Doe",
+    "trainerName": "Ella White",
     "timeSlot": "09:00-10:00",
     "packageName": "Silver",
     "packagePrice": 500,
@@ -46,7 +46,7 @@
   },
   {
     "trainerId": "6566417b0a9ca5bd21ad0d2e",
-    "trainerName": "Mamun",
+    "trainerName": "Lily Moore",
     "timeSlot": "09:00-10:00",
     "packageName": "Gold",
     "packagePrice": 750,

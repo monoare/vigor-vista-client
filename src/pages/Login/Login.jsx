@@ -49,8 +49,10 @@ const Login = () => {
       >
         <div className="hero-content flex-col md:flex-row">
           <div className="text-center md:w-1/2 lg:text-left">
-            <h1 className="text-5xl font-bold text-white">Login now!</h1>
-            <p className="py-6 font-medium text-white">
+            <h1 className="text-xl pt-16 md:pt-0 md:text-5xl font-bold text-white">
+              Login now!
+            </h1>
+            <p className="py-6 text-xs md:text-xl font-medium text-white">
               Unlock the door to your personalized experience – where security
               meets seamless access. Your journey begins with a secure login,
               ensuring your path is safeguarded as you explore the possibilities
@@ -58,7 +60,7 @@ const Login = () => {
             </p>
           </div>
           <div className="card w-full md:w/2 max-w-sm shadow-2xl bg-base-100">
-            <form onSubmit={handleLogin} className="card-body">
+            <form onSubmit={handleLogin} className="card-body text-sm">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>

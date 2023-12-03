@@ -4,6 +4,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Gallery = () => {
   const [dataSource, setDataSource] = useState([]);
@@ -40,6 +41,9 @@ const Gallery = () => {
 
   return (
     <div>
+      <Helmet>
+        Vigor Vista | Gallery
+      </Helmet>
       <div>
         <Navbar />
       </div>
